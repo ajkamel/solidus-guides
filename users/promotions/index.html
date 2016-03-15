@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+  <head>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta charset="utf-8">
+  <title>Promotions - Solidus Guides</title>
+  <meta name="viewport" content="width=device-width">
+  <link rel="shortcut icon" type="image/ico" href="/assets/favicons/favicon.ico" />
+  <link rel="icon" type="image/png" href="/assets/favicons/favicon.png" />
+  <link rel="apple-touch-icon-precomposed" href="/assets/favicons/18f-center-57.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/assets/favicons/18f-center-72.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/assets/favicons/18f-center-114.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/assets/favicons/18f-center-144.png"/>
+  <link rel="icon" type="image/png" sizes="192x192" href="/assets/favicons/18f-center-192.png" />
+  <link href='https://fonts.googleapis.com/css?family=Raleway:400,700%7COpen+Sans:400,400italic,600' rel='stylesheet' type='text/css' />
+  <link rel="stylesheet" href="/assets/css/styles.css" type='text/css' />
+  <!--[if lt IE 9]>
+    <script src="/assets/js/html5shiv.js"></script>
+    <script src="/assets/js/respond.js"></script>
+  <![endif]-->
+</head>
+
+
+  <body>
+
+    <div class="container">
+      <a class="skip-link visuallyhidden focusable" href="#main">Skip to Main Content</a>
+
+      <header role="banner">
+
+        <div class="wrap">
+
+
+          <h1 class="site-title"><a class="title-link" href="/">Solidus Guides</a></h1>
+
+          <form action="/search/" class="search-interface">
+  <div class="field">
+    <label>
+      <span class="label-text">Search</span>
+      <input type="search" id="search-input" name="q"
+       placeholder="Search - click or press '/'">
+    </label>
+  </div>
+  <button type="submit">Search</button>
+</form>
+
+
+          <div class="back-link"><a href="https://ajkamel.github.io/solidus-guides/">&laquo; Read more Solidus Guides</a></div>
+
+
+        </div>
+
+      </header>
+
+      <div class="wrap content">
+
+        <section id="main" class="main-content" role="main">
+          <h2>Promotions</h2>
+          <h2>Introduction</h2>
+
+<p>The Solidus cart&#39;s promotions functionality allows you to offer coupons and discount to your site&#39;s users, based on the conditions you choose. This guide will explain to you all of the options at hand.</p>
+
+<p>To reach the Promotions pane, go to your Admin Interface and click the &quot;Promotions&quot; tab.</p>
+
+<h2>Creating a New Promotion</h2>
+
+<p>To create a new promotion, click the &quot;New Promotion&quot; button.</p>
+
+<p><img src="/images/user/promotions/new_promotion.jpg" alt="New Promotion"></p>
+
+<p>The page that renders allows you to set several standard options that apply to all promotions. Each is explained below.</p>
+
+<p>Option | Description
+|---|---|
+Name | The name you assign for the promotion.
+Event Name | This is what must happen before the system will check to see if the promotion will apply to the order. Options are: <strong>Add to cart</strong> (any time an item is added to the cart), <strong>Order contents changed</strong> (an item is added to or removed from an order, or a quantity for an item in the order changes), <strong>User signup</strong> (a store visitor creates an account on the site), <strong>Coupon code added</strong> (a store visitor inputs a coupon code at checkout. The code has to match what you input for the code value if you select this option), or <strong>Visit static content page</strong> (a store visitor visits a path that you declare. This is often used to ensure that a customer has reviewed your store&#39;s policies or has been exposed to some other content that is important to your business model.)
+Advertise | Checking this box will make the promotion visible to site visitors as they shop your store.
+Description | A more thorough explanation of the promotion. The customer will be able to see this description at checkout.
+Usage Limit | The maximum total number of times the promotion can be used in your store across all users. If you don&#39;t input a value for this setting, the promotion can be used an unlimited number of times. Beneath this input field is a &quot;Current Usage&quot; counter, which is useful later when you&#39;re editing a promotion and need to know how many redemptions the promotion has had.
+Starts At | The date the promotion becomes valid.
+Expires At | The date after which the promotion is invalid.</p>
+
+<p>When you enter values for these fields and click &quot;Create&quot;, a new screen is rendered, giving you access to even more options for fine-tuning your promotion.</p>
+
+<h3>Rules</h3>
+
+<p>Rules represent the factors that must be met for a promotion to be applicable to an order. You can set one or more rules for a single promotion. When you set multiple rules, you have the option of either requiring that all of the rules must be met for the promotion to apply, or allowing a promotion to apply to an order if even one of the rules is met.</p>
+
+<p>There are five types of rules. You can only add one rule of each type to a single promotion. Each is explained in detail below.</p>
+
+<p><img src="/images/user/promotions/rules_options.jpg" alt="Rules Options"></p>
+
+<h4>Item Total</h4>
+
+<p>When you select &quot;Item total&quot; from the &quot;Add Rule of Type&quot; drop-down menu and click &quot;Add&quot;, you are declaring an Item Total rule.</p>
+
+<p><img src="/images/user/promotions/item_total_rule.jpg" alt="Item Total Rule"></p>
+
+<p>You can then set the parameters for this type of rule. Specifically, you can establish whether an order&#39;s items must be <strong>greater than</strong> or <strong>equal to or greater than</strong> the amount you set. Click &quot;Update&quot;.</p>
+
+<hr>
+
+<p>To remove a rule from a promotion, click the trash can icon next to it.</p>
+
+<p><img src="/images/user/promotions/delete_rule_icon.jpg" alt="Delete Rule Icon"></p>
+
+<hr>
+
+<h4>Products</h4>
+
+<p>Using a rule of this type means the order must contain <strong>at least one</strong> or <strong>all</strong> of the products you declare.</p>
+
+<p><img src="/images/user/promotions/products_rule.jpg" alt="Products Rule"></p>
+
+<p>To create this kind of rule, just select &quot;Product(s)&quot; from the &quot;Add Rule of Type&quot; drop-down menu and click &quot;Add&quot;. Start typing in the name of the product(s) you want to apply discounts to into the &quot;Choose Products&quot; box. Click on the correct variants. Choose either &quot;at least one&quot; or &quot;all&quot; from the selection box, and click &quot;Update&quot;.</p>
+
+<h4>User</h4>
+
+<p>You can use the User rule type to restrict a promotion to only those customers you declare. To create this type of rule, select &quot;User&quot; from the &quot;Add Rule of Type&quot; drop-down menu and click &quot;Add&quot;. Start typing in the name or email address of the user(s) you want to offer this promotion to. As the correct users are offered, click them to add them to the list. Click &quot;Update&quot;.</p>
+
+<p><img src="/images/user/promotions/user_rule.jpg" alt="User Rule"></p>
+
+<h4>First Order</h4>
+
+<p>Select &quot;First order&quot; from the &quot;Add Rule of Type&quot; drop-down menu and click &quot;Add&quot; then &quot;Update&quot; to add a rule of this type to your promotion. This rule will restrict the promotion to only those customers ordering from you for the first time.</p>
+
+<p><img src="/images/user/promotions/first_order_rule.jpg" alt="First Order Rule"></p>
+
+<h4>User Logged In</h4>
+
+<p>Add a rule of this type to restrict the promotion only to logged-in users. Select &quot;User Logged In&quot; from the &quot;Add Rule of Type&quot; drop-down list, click &quot;Add&quot;, then click &quot;Update&quot;.</p>
+
+<p><img src="/images/user/promotions/logged_in_rule.jpg" alt="Logged In Rule"></p>
+
+<h3>Actions</h3>
+
+<p>Whereas <a href="#rules">Rules</a> establish whether a promotion applies or not, Actions determine what happens when a promotion does apply to an order. There are two types of actions: <a href="#create-adjustments">create adjustments</a> and <a href="#create-line-items">create line items</a>.</p>
+
+<h4>Create Adjustments</h4>
+
+<p>When you select &quot;Create adjustment&quot; from the &quot;Add Action of Type&quot; drop-down menu and click &quot;Add&quot;, the system presents you with several calculator options. These are the same as the options you read about in the <a href="calculators">calculators guide</a>, except that instead of a <a href="calculators#price-sack">price sack calculator</a>, there are two additional calculators: percent per item and free shipping.</p>
+
+<p><img src="/images/user/promotions/create_adjustment.jpg" alt="Create Adjustments Action Calculators"></p>
+
+<p>By default, when you add a new &quot;Create adjustment&quot; calculator it sets it to a &quot;Flat percent&quot; calculator. You can change this by selecting the new calculator type from the &quot;Calculator&quot; drop-down menu, but you will need to click the &quot;Update&quot; button to get that calculator&#39;s specific additional required fields to display.</p>
+
+<p>Each calculator has its own set of required additional information fields.</p>
+
+<p>Calculator Type | Additional Data Required
+|---|---|
+Flat Percent | Percentage amount
+Flat Rate | Amount of discount, and currency
+Flexible Rate | The cost of the first item, the cost of each additional item, the maximum number of items included in the promotion, and the currency
+Percent Per Item | Percentage amount
+Free Shipping | No additional info required</p>
+
+<p>Enter all required information for your calculator type, then click &quot;Update&quot;.</p>
+
+<h4>Create Line Items</h4>
+
+<p>This action type is a way of automatically adding items to an order when a promotion applies to an order. To add this action to your promotion, select &quot;Create line items&quot; from the &quot;Add Action of Type&quot; drop-down menu and click &quot;Add&quot;.</p>
+
+<p><img src="/images/user/promotions/create_line_item.jpg" alt="Create Line Item Action"></p>
+
+<p>Select the quantity and variant you want automatically added to the customer&#39;s order from the product drop-down menu. Click &quot;Update&quot;.</p>
+
+<p>!!!
+Product variants added through Line Item Action Promotions will be priced as usual. If your intention is to add a free product, you should do both a Line Item action to add the product, and an Adjustment action to discount the cost of that variant.
+!!!</p>
+
+<h2>Editing a Promotion</h2>
+
+<p>To edit a promotion, first go to the Promotions list (from the Admin Interface, click &quot;Promotions&quot;). Click the &quot;Edit&quot; icon next to the promotion.</p>
+
+<p><img src="/images/user/promotions/edit_promotion_icon.jpg" alt="Edit Promotion Icon"></p>
+
+<h2>Removing a Promotion</h2>
+
+<p>To remove a promotion, click the &quot;Delete&quot; icon next to the promotion in the Promotions list.</p>
+
+<p><img src="/images/user/promotions/delete_promotion_icon.jpg" alt="Delete Promotion Icon"></p>
+
+        </section>
+
+        <aside>
+  <p class="intro"></p>
+  <nav class="sidebar-nav" role="navigation">
+    <ul>
+        <li class="group ">
+          <a href="/"  
+            title="Introduction">Introduction</a>
+          
+          
+
+        </li>
+        <li class="group ">
+          <a href="/users/"  
+            title="Users">Users</a>
+          
+          
+
+<button class="expand-subnav"
+        aria-expanded="true"
+        aria-controls="nav-collapsible-2">+</button>
+<ul class="nav-children" id="nav-collapsible-2"
+    aria-hidden="false">
+  
+  
+    <li class="">
+      <a href="/users/overview/"
+        title="Overview">Overview</a>
+      
+      
+
+      
+    </li>
+  
+    <li class="">
+      <a href="/users/configuration/"
+        title="Configuration">Configuration</a>
+      
+      
+
+<button class="expand-subnav"
+        aria-expanded="false"
+        aria-controls="nav-collapsible-2">+</button>
+<ul class="nav-children" id="nav-collapsible-2"
+    aria-hidden="true">
+  
+  
+    <li class="">
+      <a href="/users/configuration/configuring_analytics/"
+        title="Configuring Analytics">Configuring Analytics</a>
+      
+      
+
+      
+    </li>
+  
+    <li class="">
+      <a href="/users/configuration/configuring_general_settings/"
+        title="Configuring Settings">Configuring Settings</a>
+      
+      
+
+      
+    </li>
+  
+    <li class="">
+      <a href="/users/configuration/configuring_geography/"
+        title="Configuring Geography">Configuring Geography</a>
+      
+      
+
+      
+    </li>
+  
+    <li class="">
+      <a href="/users/configuration/configuring_inventory/"
+        title="Configuring Inventory">Configuring Inventory</a>
+      
+      
+
+      
+    </li>
+  
+    <li class="">
+      <a href="/users/configuration/configuring_mail_ethods/"
+        title="Configuring Mail Methods">Configuring Mail Methods</a>
+      
+      
+
+      
+    </li>
+  
+    <li class="">
+      <a href="/users/configuration/configuring_shipping/"
+        title="Configuring Shipping">Configuring Shipping</a>
+      
+      
+
+      
+    </li>
+  
+    <li class="">
+      <a href="/users/configuration/configuring_taxes/"
+        title="Configuring Taxes">Configuring Taxes</a>
+      
+      
+
+      
+    </li>
+  
+    <li class="">
+      <a href="/users/configuration/configuring_taxonomies/"
+        title="Configuring Taxonomies">Configuring Taxonomies</a>
+      
+      
+
+      
+    </li>
+</ul>
+
+      
+    </li>
+  
+    <li class="">
+      <a href="/users/orders/"
+        title="Orders">Orders</a>
+      
+      
+
+<button class="expand-subnav"
+        aria-expanded="false"
+        aria-controls="nav-collapsible-3">+</button>
+<ul class="nav-children" id="nav-collapsible-3"
+    aria-hidden="true">
+  
+  
+    <li class="">
+      <a href="/users/orders/editing_orders/"
+        title="Editing Orders">Editing Orders</a>
+      
+      
+
+      
+    </li>
+  
+    <li class="">
+      <a href="/users/orders/enter_orders/"
+        title="Entering Orders">Entering Orders</a>
+      
+      
+
+      
+    </li>
+  
+    <li class="">
+      <a href="/users/orders/order_states/"
+        title="Order States">Order States</a>
+      
+      
+
+      
+    </li>
+  
+    <li class="">
+      <a href="/users/orders/processing_orders/"
+        title="Processing Orders">Processing Orders</a>
+      
+      
+
+      
+    </li>
+  
+    <li class="">
+      <a href="/users/orders/returning_orders/"
+        title="Returning Orders">Returning Orders</a>
+      
+      
+
+      
+    </li>
+  
+    <li class="">
+      <a href="/users/orders/searching_orders/"
+        title="Searching Orders">Searching Orders</a>
+      
+      
+
+      
+    </li>
+</ul>
+
+      
+    </li>
+  
+    <li class="">
+      <a href="/users/payments/"
+        title="Payments">Payments</a>
+      
+      
+
+<button class="expand-subnav"
+        aria-expanded="false"
+        aria-controls="nav-collapsible-4">+</button>
+<ul class="nav-children" id="nav-collapsible-4"
+    aria-hidden="true">
+  
+  
+    <li class="">
+      <a href="/users/payments/payment_methods/"
+        title="Payment methods">Payment methods</a>
+      
+      
+
+      
+    </li>
+  
+    <li class="">
+      <a href="/users/payments/payment_states/"
+        title="Payment States">Payment States</a>
+      
+      
+
+      
+    </li>
+</ul>
+
+      
+    </li>
+  
+    <li class="">
+      <a href="/users/products/"
+        title="Products">Products</a>
+      
+      
+
+<button class="expand-subnav"
+        aria-expanded="false"
+        aria-controls="nav-collapsible-5">+</button>
+<ul class="nav-children" id="nav-collapsible-5"
+    aria-hidden="true">
+  
+  
+    <li class="">
+      <a href="/users/products/cloning_products/"
+        title="Cloning Products">Cloning Products</a>
+      
+      
+
+      
+    </li>
+  
+    <li class="">
+      <a href="/users/products/creating_products/"
+        title="Creating Products">Creating Products</a>
+      
+      
+
+      
+    </li>
+  
+    <li class="">
+      <a href="/users/products/deleting_products/"
+        title="Deleting Products">Deleting Products</a>
+      
+      
+
+      
+    </li>
+  
+    <li class="">
+      <a href="/users/products/editing_products/"
+        title="Editing Products">Editing Products</a>
+      
+      
+
+      
+    </li>
+  
+    <li class="">
+      <a href="/users/products/product_options/"
+        title="Product Options">Product Options</a>
+      
+      
+
+      
+    </li>
+  
+    <li class="">
+      <a href="/users/products/product_properties/"
+        title="Product Properties">Product Properties</a>
+      
+      
+
+      
+    </li>
+  
+    <li class="">
+      <a href="/users/products/product_prototypes/"
+        title="product_prototypes">product_prototypes</a>
+      
+      
+
+      
+    </li>
+  
+    <li class="">
+      <a href="/users/products/searching_products/"
+        title="Searching Products">Searching Products</a>
+      
+      
+
+      
+    </li>
+</ul>
+
+      
+    </li>
+  
+    <li class="">
+      <a href="/users/shipments/"
+        title="Shipments">Shipments</a>
+      
+      
+
+<button class="expand-subnav"
+        aria-expanded="false"
+        aria-controls="nav-collapsible-6">+</button>
+<ul class="nav-children" id="nav-collapsible-6"
+    aria-hidden="true">
+  
+  
+    <li class="">
+      <a href="/users/shipments/calculations/"
+        title="Calculations">Calculations</a>
+      
+      
+
+      
+    </li>
+  
+    <li class="">
+      <a href="/users/shipments/shipping_categories/"
+        title="Shipping Categories">Shipping Categories</a>
+      
+      
+
+      
+    </li>
+  
+    <li class="">
+      <a href="/users/shipments/shipping_methods/"
+        title="Shipping Methods">Shipping Methods</a>
+      
+      
+
+      
+    </li>
+  
+    <li class="">
+      <a href="/users/shipments/zones/"
+        title="Zones">Zones</a>
+      
+      
+
+      
+    </li>
+</ul>
+
+      
+    </li>
+  
+    <li class="">
+      <a href="/users/extensions/"
+        title="Extensions">Extensions</a>
+      
+      
+
+      
+    </li>
+  
+    <li class="sidebar-nav-active">
+      <a href="/users/promotions/"
+        title="Current Page">Promotions</a>
+      
+      
+
+      
+    </li>
+  
+    <li class="">
+      <a href="/users/reports/"
+        title="Reports">Reports</a>
+      
+      
+
+      
+    </li>
+</ul>
+
+        </li>
+    </ul>
+  </nav>
+</aside>
+
+
+      </div><!-- /.wrap content -->
+
+      <footer role="contentinfo">
+  <div class="wrap">
+    <p>This project is maintained by <a href="https://solidus.io">Ash Kamel</a>. The source is available at <a href="https://github.com/ajkamel/solidus-guides">https://github.com/ajkamel/solidus-guides</a>.</p>
+
+    <p>Hosted on <a href="https://github.com/ajkamel/">Github</a>.
+    The <a href="https://github.com/ajkamel/solidus-guides/">Solidus Guides</a> is based on <a href="https://github.com/18F/guides-template/"> from <a href="https://github.com/cfpb/docter/">DOCter</a> from <a href="http://cfpb.github.io/">CFPB</a>.</p>
+    <p><a href="https://github.com/ajkamel/solidus-guides/edit/18f-pages/_pages/users/promotions.md">Edit this page</a> or <a href="https://github.com/ajkamel/solidus-guides/issues">file an issue</a> on GitHub.</p>
+  </div><!--/.wrap -->
+</footer>
+
+
+    </div> <!-- /.container -->
+
+  </body>
+
+
+<script src="/assets/js/vendor/jquery-1.11.2.min.js"></script>
+<script src="/assets/js/accordion.js"></script>
+<script src="/assets/js/18f-guide.js"></script>
+<script>JEKYLL_PAGES_API_SEARCH_BASEURL = '';</script>
+<script async src="/assets/js/search-bundle.js"></script>
+
+</html>

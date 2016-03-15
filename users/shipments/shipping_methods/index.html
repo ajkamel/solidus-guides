@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+  <head>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta charset="utf-8">
+  <title>Shipping Methods - Solidus Guides</title>
+  <meta name="viewport" content="width=device-width">
+  <link rel="shortcut icon" type="image/ico" href="/assets/favicons/favicon.ico" />
+  <link rel="icon" type="image/png" href="/assets/favicons/favicon.png" />
+  <link rel="apple-touch-icon-precomposed" href="/assets/favicons/18f-center-57.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/assets/favicons/18f-center-72.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/assets/favicons/18f-center-114.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/assets/favicons/18f-center-144.png"/>
+  <link rel="icon" type="image/png" sizes="192x192" href="/assets/favicons/18f-center-192.png" />
+  <link href='https://fonts.googleapis.com/css?family=Raleway:400,700%7COpen+Sans:400,400italic,600' rel='stylesheet' type='text/css' />
+  <link rel="stylesheet" href="/assets/css/styles.css" type='text/css' />
+  <!--[if lt IE 9]>
+    <script src="/assets/js/html5shiv.js"></script>
+    <script src="/assets/js/respond.js"></script>
+  <![endif]-->
+</head>
+
+
+  <body>
+
+    <div class="container">
+      <a class="skip-link visuallyhidden focusable" href="#main">Skip to Main Content</a>
+
+      <header role="banner">
+
+        <div class="wrap">
+
+
+          <h1 class="site-title"><a class="title-link" href="/">Solidus Guides</a></h1>
+
+          <form action="/search/" class="search-interface">
+  <div class="field">
+    <label>
+      <span class="label-text">Search</span>
+      <input type="search" id="search-input" name="q"
+       placeholder="Search - click or press '/'">
+    </label>
+  </div>
+  <button type="submit">Search</button>
+</form>
+
+
+          <div class="back-link"><a href="https://ajkamel.github.io/solidus-guides/">&laquo; Read more Solidus Guides</a></div>
+
+
+        </div>
+
+      </header>
+
+      <div class="wrap content">
+
+        <section id="main" class="main-content" role="main">
+          <h2>Shipping Methods</h2>
+          <h2>Shipping Methods</h2>
+
+<p>Now that you have set up all of the pieces you need, it&#39;s time to put them together into the shipping options that the customer sees when they reach checkout. These options are called Shipping Methods - they are the carriers and services used to send your products.</p>
+
+<h3>Adding a Shipping Method</h3>
+
+<p>To add a new shipping method to your store, go to the Admin Interface and click &quot;Configuration&quot;, then &quot;Shipping Methods&quot;. Click the &quot;New Shipping Method&quot; button to open the New Shipping Method form.</p>
+
+<p><img src="/images/user/shipments/new_shipping_method.jpg" alt="New Shipping Method"></p>
+
+<h4>Name</h4>
+
+<p>Enter a name for the shipping method. This is the exact wording that the customer will see at checkout. This should include both the carrier (USPS, UPS, Fedex, DHL, etc.) as well as the service type (First Class Mail, Overnight, Ground, etc.) So it would be very common to need several shipping methods for your store, for example:</p>
+
+<ul>
+<li>USPS First Class</li>
+<li>USPS First Class International</li>
+<li>USPS Priority</li>
+<li>USPS MediaMail</li>
+<li>UPS Two-Day</li>
+<li>UPS Ground</li>
+<li>Fedex Overnight</li>
+</ul>
+
+<p>Remember that you will need to associate one or more <a href="#zones">zones</a> with each shipping method in order for it to appear as an option at checkout.</p>
+
+<h4>Display</h4>
+
+<p>From the &quot;Display&quot; drop-down box, choose whether you want to have the option display only on the backend, the frontend, or both.</p>
+
+<p>Shipping methods that are displayed on the frontend can be chosen by your store&#39;s customers at checkout time, as long as the products in the order can be shipped by that carrier and the shipping address is one the carrier serves.</p>
+
+<p>If a shipping method is available only on backend, then only your store&#39;s administrators can assign it to an order. Some examples of cases where you might want to use a backend-only shipping method:</p>
+
+<ul>
+<li>You sell handmade wind chimes. You want to offer a &quot;Pick-up in Store&quot; option, but only to certain customers.</li>
+<li>With your online produce market you provide personal delivery of goods, but only to your best local customers.</li>
+<li>Yours is a photography studio. You usually sell prints that physical delivery, but for some clients you are willing to send electronic media that they can print themselves.</li>
+</ul>
+
+<h4>Tracking URL</h4>
+
+<p>You can optionally input a tracking URL for your new shipping method. This allows customers to track the progress of their package from your <a href="stock_locations">Stock Location</a> to the order&#39;s shipping address. The string &quot;:tracking&quot; will be replaced with the tracking number you input once you actually process the order.</p>
+
+<p>You may need to check with the shipping carrier to see if they have a Shipping Confirmation URL that customers can use for this service. Some <a href="http://verysimple.com/2011/07/06/ups-tracking-url/">commonly-used tracking URLs</a> are available online.</p>
+
+<p>!!!
+Please note that Solidus Commerce, Inc. makes no claims of warranty or accuracy for the information presented on third-party websites. We strongly urge you to verify the information independently before you put it into production on your store.
+!!!</p>
+
+<h4>Categories</h4>
+
+<p>Some shipping methods may only apply to certain types of products in your store, regardless of where those items are being shipped. You may only want to send over-sized items via UPS Ground, for example, and not via USPS Priority. The options shown in the &quot;Categories&quot; section correspond to the <a href="shipping_categories">Shipping Categories</a> you set up in an earlier section of this guide series.</p>
+
+<p><img src="/images/user/shipments/shipping_method_categories.jpg" alt="Shipping Method Categories"></p>
+
+<p>Check the boxes next to the categories you want served by your new shipping method.</p>
+
+<h4>Zones</h4>
+
+<p>In <a href="zones">a previous step to this guide</a> you learned about how to set up geographical zones for your store. Within the form&#39;s &quot;Zones&quot; section, you need to specify which zones are served by this shipping method. The &quot;EU<em>VAT&quot; (European Value-Added Tax) zone could be served by USPS First Class International, but could _not</em> be served by USPS Priority Mail.</p>
+
+<p><img src="/images/user/shipments/shipping_method_zones.jpg" alt="Shipping Method Zones"></p>
+
+<p>Check the boxes next to any zones you want served by this shipping method.</p>
+
+<h4>Calculator</h4>
+
+<p>Each shipping method is associated with one <a href="calculators">Calculator</a>. You can choose one of the built-in Solidus calculators, or one you made yourself.</p>
+
+<p><img src="/images/user/shipments/shipping_method_calculator.jpg" alt="Shipping Method Calculator"></p>
+
+<p>Once you&#39;ve made your calculator selection, click the &quot;Create&quot; button to finalize your new shipping method. The screen will refresh with one or more fields you&#39;ll use to set the parameters of your calculator. For example, creating a shipping method with a flat percent calculator will produce a screen like this:</p>
+
+<p><img src="/images/user/shipments/shipping_method_flat_percent.jpg" alt="Shipping Method Flat Percent"></p>
+
+<p>If necessary, you can re-read the <a href="calculators">Calculators</a> portion of this guide series to better understand the options. Click the &quot;Update&quot; button, and your shipping method is now complete!</p>
+
+<h3>Editing a Shipping Method</h3>
+
+<p>To edit an existing method, go to the Admin Interface and click &quot;Configuration&quot;, then &quot;Shipping Methods&quot;. Click the &quot;Edit&quot; icon next to any of the shipping methods in the list.</p>
+
+<p><img src="/images/user/shipments/edit_shipping_method.jpg" alt="Edit Shipping Method"></p>
+
+<p>The form and all options that come up are the same as those you used in creating your shipping methods.</p>
+
+<h3>Deleting a Shipping Method</h3>
+
+<p>To delete a shipping method, go to the Admin Interface and click &quot;Configuration&quot;, then &quot;Shipping Methods&quot;. Click the &quot;Delete&quot; icon next to any of the shipping methods in the list.</p>
+
+<p><img src="/images/user/shipments/delete_shipping_method.jpg" alt="Delete Shipping Method"></p>
+
+<p>Confirm that you want to delete the shipping method by clicking &quot;OK&quot;.</p>
+
+        </section>
+
+        <aside>
+  <p class="intro"></p>
+  <nav class="sidebar-nav" role="navigation">
+    <ul>
+        <li class="group ">
+          <a href="/"  
+            title="Introduction">Introduction</a>
+          
+          
+
+        </li>
+        <li class="group ">
+          <a href="/users/"  
+            title="Users">Users</a>
+          
+          
+
+<button class="expand-subnav"
+        aria-expanded="true"
+        aria-controls="nav-collapsible-2">+</button>
+<ul class="nav-children" id="nav-collapsible-2"
+    aria-hidden="false">
+  
+  
+    <li class="">
+      <a href="/users/overview/"
+        title="Overview">Overview</a>
+      
+      
+
+      
+    </li>
+  
+    <li class="">
+      <a href="/users/configuration/"
+        title="Configuration">Configuration</a>
+      
+      
+
+<button class="expand-subnav"
+        aria-expanded="false"
+        aria-controls="nav-collapsible-2">+</button>
+<ul class="nav-children" id="nav-collapsible-2"
+    aria-hidden="true">
+  
+  
+    <li class="">
+      <a href="/users/configuration/configuring_analytics/"
+        title="Configuring Analytics">Configuring Analytics</a>
+      
+      
+
+      
+    </li>
+  
+    <li class="">
+      <a href="/users/configuration/configuring_general_settings/"
+        title="Configuring Settings">Configuring Settings</a>
+      
+      
+
+      
+    </li>
+  
+    <li class="">
+      <a href="/users/configuration/configuring_geography/"
+        title="Configuring Geography">Configuring Geography</a>
+      
+      
+
+      
+    </li>
+  
+    <li class="">
+      <a href="/users/configuration/configuring_inventory/"
+        title="Configuring Inventory">Configuring Inventory</a>
+      
+      
+
+      
+    </li>
+  
+    <li class="">
+      <a href="/users/configuration/configuring_mail_ethods/"
+        title="Configuring Mail Methods">Configuring Mail Methods</a>
+      
+      
+
+      
+    </li>
+  
+    <li class="">
+      <a href="/users/configuration/configuring_shipping/"
+        title="Configuring Shipping">Configuring Shipping</a>
+      
+      
+
+      
+    </li>
+  
+    <li class="">
+      <a href="/users/configuration/configuring_taxes/"
+        title="Configuring Taxes">Configuring Taxes</a>
+      
+      
+
+      
+    </li>
+  
+    <li class="">
+      <a href="/users/configuration/configuring_taxonomies/"
+        title="Configuring Taxonomies">Configuring Taxonomies</a>
+      
+      
+
+      
+    </li>
+</ul>
+
+      
+    </li>
+  
+    <li class="">
+      <a href="/users/orders/"
+        title="Orders">Orders</a>
+      
+      
+
+<button class="expand-subnav"
+        aria-expanded="false"
+        aria-controls="nav-collapsible-3">+</button>
+<ul class="nav-children" id="nav-collapsible-3"
+    aria-hidden="true">
+  
+  
+    <li class="">
+      <a href="/users/orders/editing_orders/"
+        title="Editing Orders">Editing Orders</a>
+      
+      
+
+      
+    </li>
+  
+    <li class="">
+      <a href="/users/orders/enter_orders/"
+        title="Entering Orders">Entering Orders</a>
+      
+      
+
+      
+    </li>
+  
+    <li class="">
+      <a href="/users/orders/order_states/"
+        title="Order States">Order States</a>
+      
+      
+
+      
+    </li>
+  
+    <li class="">
+      <a href="/users/orders/processing_orders/"
+        title="Processing Orders">Processing Orders</a>
+      
+      
+
+      
+    </li>
+  
+    <li class="">
+      <a href="/users/orders/returning_orders/"
+        title="Returning Orders">Returning Orders</a>
+      
+      
+
+      
+    </li>
+  
+    <li class="">
+      <a href="/users/orders/searching_orders/"
+        title="Searching Orders">Searching Orders</a>
+      
+      
+
+      
+    </li>
+</ul>
+
+      
+    </li>
+  
+    <li class="">
+      <a href="/users/payments/"
+        title="Payments">Payments</a>
+      
+      
+
+<button class="expand-subnav"
+        aria-expanded="false"
+        aria-controls="nav-collapsible-4">+</button>
+<ul class="nav-children" id="nav-collapsible-4"
+    aria-hidden="true">
+  
+  
+    <li class="">
+      <a href="/users/payments/payment_methods/"
+        title="Payment methods">Payment methods</a>
+      
+      
+
+      
+    </li>
+  
+    <li class="">
+      <a href="/users/payments/payment_states/"
+        title="Payment States">Payment States</a>
+      
+      
+
+      
+    </li>
+</ul>
+
+      
+    </li>
+  
+    <li class="">
+      <a href="/users/products/"
+        title="Products">Products</a>
+      
+      
+
+<button class="expand-subnav"
+        aria-expanded="false"
+        aria-controls="nav-collapsible-5">+</button>
+<ul class="nav-children" id="nav-collapsible-5"
+    aria-hidden="true">
+  
+  
+    <li class="">
+      <a href="/users/products/cloning_products/"
+        title="Cloning Products">Cloning Products</a>
+      
+      
+
+      
+    </li>
+  
+    <li class="">
+      <a href="/users/products/creating_products/"
+        title="Creating Products">Creating Products</a>
+      
+      
+
+      
+    </li>
+  
+    <li class="">
+      <a href="/users/products/deleting_products/"
+        title="Deleting Products">Deleting Products</a>
+      
+      
+
+      
+    </li>
+  
+    <li class="">
+      <a href="/users/products/editing_products/"
+        title="Editing Products">Editing Products</a>
+      
+      
+
+      
+    </li>
+  
+    <li class="">
+      <a href="/users/products/product_options/"
+        title="Product Options">Product Options</a>
+      
+      
+
+      
+    </li>
+  
+    <li class="">
+      <a href="/users/products/product_properties/"
+        title="Product Properties">Product Properties</a>
+      
+      
+
+      
+    </li>
+  
+    <li class="">
+      <a href="/users/products/product_prototypes/"
+        title="product_prototypes">product_prototypes</a>
+      
+      
+
+      
+    </li>
+  
+    <li class="">
+      <a href="/users/products/searching_products/"
+        title="Searching Products">Searching Products</a>
+      
+      
+
+      
+    </li>
+</ul>
+
+      
+    </li>
+  
+    <li class="">
+      <a href="/users/shipments/"
+        title="Shipments">Shipments</a>
+      
+      
+
+<button class="expand-subnav"
+        aria-expanded="true"
+        aria-controls="nav-collapsible-6">+</button>
+<ul class="nav-children" id="nav-collapsible-6"
+    aria-hidden="false">
+  
+  
+    <li class="">
+      <a href="/users/shipments/calculations/"
+        title="Calculations">Calculations</a>
+      
+      
+
+      
+    </li>
+  
+    <li class="">
+      <a href="/users/shipments/shipping_categories/"
+        title="Shipping Categories">Shipping Categories</a>
+      
+      
+
+      
+    </li>
+  
+    <li class="sidebar-nav-active">
+      <a href="/users/shipments/shipping_methods/"
+        title="Current Page">Shipping Methods</a>
+      
+      
+
+      
+    </li>
+  
+    <li class="">
+      <a href="/users/shipments/zones/"
+        title="Zones">Zones</a>
+      
+      
+
+      
+    </li>
+</ul>
+
+      
+    </li>
+  
+    <li class="">
+      <a href="/users/extensions/"
+        title="Extensions">Extensions</a>
+      
+      
+
+      
+    </li>
+  
+    <li class="">
+      <a href="/users/promotions/"
+        title="Promotions">Promotions</a>
+      
+      
+
+      
+    </li>
+  
+    <li class="">
+      <a href="/users/reports/"
+        title="Reports">Reports</a>
+      
+      
+
+      
+    </li>
+</ul>
+
+        </li>
+    </ul>
+  </nav>
+</aside>
+
+
+      </div><!-- /.wrap content -->
+
+      <footer role="contentinfo">
+  <div class="wrap">
+    <p>This project is maintained by <a href="https://solidus.io">Ash Kamel</a>. The source is available at <a href="https://github.com/ajkamel/solidus-guides">https://github.com/ajkamel/solidus-guides</a>.</p>
+
+    <p>Hosted on <a href="https://github.com/ajkamel/">Github</a>.
+    The <a href="https://github.com/ajkamel/solidus-guides/">Solidus Guides</a> is based on <a href="https://github.com/18F/guides-template/"> from <a href="https://github.com/cfpb/docter/">DOCter</a> from <a href="http://cfpb.github.io/">CFPB</a>.</p>
+    <p><a href="https://github.com/ajkamel/solidus-guides/edit/18f-pages/_pages/users/shipments/shipping_methods.md">Edit this page</a> or <a href="https://github.com/ajkamel/solidus-guides/issues">file an issue</a> on GitHub.</p>
+  </div><!--/.wrap -->
+</footer>
+
+
+    </div> <!-- /.container -->
+
+  </body>
+
+
+<script src="/assets/js/vendor/jquery-1.11.2.min.js"></script>
+<script src="/assets/js/accordion.js"></script>
+<script src="/assets/js/18f-guide.js"></script>
+<script>JEKYLL_PAGES_API_SEARCH_BASEURL = '';</script>
+<script async src="/assets/js/search-bundle.js"></script>
+
+</html>

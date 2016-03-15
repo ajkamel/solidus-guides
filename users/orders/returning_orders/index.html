@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+  <head>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta charset="utf-8">
+  <title>Returns - Solidus Guides</title>
+  <meta name="viewport" content="width=device-width">
+  <link rel="shortcut icon" type="image/ico" href="/assets/favicons/favicon.ico" />
+  <link rel="icon" type="image/png" href="/assets/favicons/favicon.png" />
+  <link rel="apple-touch-icon-precomposed" href="/assets/favicons/18f-center-57.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/assets/favicons/18f-center-72.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/assets/favicons/18f-center-114.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/assets/favicons/18f-center-144.png"/>
+  <link rel="icon" type="image/png" sizes="192x192" href="/assets/favicons/18f-center-192.png" />
+  <link href='https://fonts.googleapis.com/css?family=Raleway:400,700%7COpen+Sans:400,400italic,600' rel='stylesheet' type='text/css' />
+  <link rel="stylesheet" href="/assets/css/styles.css" type='text/css' />
+  <!--[if lt IE 9]>
+    <script src="/assets/js/html5shiv.js"></script>
+    <script src="/assets/js/respond.js"></script>
+  <![endif]-->
+</head>
+
+
+  <body>
+
+    <div class="container">
+      <a class="skip-link visuallyhidden focusable" href="#main">Skip to Main Content</a>
+
+      <header role="banner">
+
+        <div class="wrap">
+
+
+          <h1 class="site-title"><a class="title-link" href="/">Solidus Guides</a></h1>
+
+          <form action="/search/" class="search-interface">
+  <div class="field">
+    <label>
+      <span class="label-text">Search</span>
+      <input type="search" id="search-input" name="q"
+       placeholder="Search - click or press '/'">
+    </label>
+  </div>
+  <button type="submit">Search</button>
+</form>
+
+
+          <div class="back-link"><a href="https://ajkamel.github.io/solidus-guides/">&laquo; Read more Solidus Guides</a></div>
+
+
+        </div>
+
+      </header>
+
+      <div class="wrap content">
+
+        <section id="main" class="main-content" role="main">
+          <h2>Returns</h2>
+          <h2>Introduction</h2>
+
+<p>Returns are a reality of doing business for most e-commerce sites. A customer may find that the item they ordered doesn&#39;t fit, or that it doesn&#39;t fit their needs. The product may be damaged in shipping. There are many reasons why a customer could choose to return an item they purchased in your store. This guide covers how you, as the site administrator, issue RMAs (Return Merchandise Authorizations) and process returns.</p>
+
+<h2>Creating RMAs for Returns</h2>
+
+<p>You can only create RMAs for orders that have already been shipped. That makes sense, as you wouldn&#39;t authorize a return for something you haven&#39;t sent out yet.</p>
+
+<p><img src="/images/user/orders/return_authorizations_link.png" alt="Return Authorizations Link"></p>
+
+<p>To create an RMA for a shipped order, click the order&#39;s &quot;Return Authorizations&quot; link, then click the &quot;New Return Authorization&quot; button. The form that opens up enables you to select which items will be authorized to be returned, and issue an RMA for the corresponding amount.</p>
+
+<p><img src="/images/user/orders/rma_form.png" alt="RMA Form"></p>
+
+<p>To use it, just select each line item to be returned, and either a reimbursement type or exchange item. Selecting the &quot;Original&quot; reimbursement type will refund a user back to their original payment method when the items are returned and approved.  Selecting an exchange item will create a new shipment to ship the exchange item to the customer.  The form will automatically calculate the RMA value based on the sale price of the item(s), but you will have to confirm the amount when the reimbursement is issued. This gives you a chance to adjust for handling fees, restocking fees, damages, etc.</p>
+
+<p>Input the reason and any memo notes for the return, and select the <a href="stock_locations">Stock Location</a> the item is coming back to. Click the &quot;Create&quot; button.</p>
+
+<p>Now you just need to wait for the package to be received at your location.</p>
+
+<h2>Processing Returns</h2>
+
+<p>Once you receive a return package, you need to create a &quot;Customer Return&quot;. To do so, go to the order in question and click &quot;Customer Returns&quot;. Click the &quot;New Customer Return&quot; button.</p>
+
+<p><img src="/images/user/orders/customer_return_link.png" alt="Receive RMA Button"></p>
+
+<p>Select which of the authorized return items were received, and to which <a href="stock_locations">Stock Location</a>.  Once done click the &quot;Create&quot; button.</p>
+
+<p><img src="/images/user/orders/customer_return_form.png" alt="Receive RMA Button"></p>
+
+<p>The return items are marked as accepted, and now you can create a reimbursement for the $22.99 you owe the customer.</p>
+
+<p><img src="/images/user/orders/create_reimbursement_button.png" alt="RMA Received"></p>
+
+<p>The reimbursement form will be populated according to your original reimbursement or exchange selections chosen during the return authorization form.  You may override the selected reimbursement type or exchange item now if you would like, otherwise click the &quot;Reimburse&quot; button to create the refund.</p>
+
+<p><img src="/images/user/orders/reimbursement_form.png" alt="Issue a Reimbursement"></p>
+
+<p>Your return-processing is complete!  As you can see there will now be a $22.99 refund issued to the original credit card.</p>
+
+<p><img src="/images/user/orders/reimbursement_complete.png" alt="Reimbursement Complete"></p>
+
+        </section>
+
+        <aside>
+  <p class="intro"></p>
+  <nav class="sidebar-nav" role="navigation">
+    <ul>
+        <li class="group ">
+          <a href="/"  
+            title="Introduction">Introduction</a>
+          
+          
+
+        </li>
+        <li class="group ">
+          <a href="/users/"  
+            title="Users">Users</a>
+          
+          
+
+<button class="expand-subnav"
+        aria-expanded="true"
+        aria-controls="nav-collapsible-2">+</button>
+<ul class="nav-children" id="nav-collapsible-2"
+    aria-hidden="false">
+  
+  
+    <li class="">
+      <a href="/users/overview/"
+        title="Overview">Overview</a>
+      
+      
+
+      
+    </li>
+  
+    <li class="">
+      <a href="/users/configuration/"
+        title="Configuration">Configuration</a>
+      
+      
+
+<button class="expand-subnav"
+        aria-expanded="false"
+        aria-controls="nav-collapsible-2">+</button>
+<ul class="nav-children" id="nav-collapsible-2"
+    aria-hidden="true">
+  
+  
+    <li class="">
+      <a href="/users/configuration/configuring_analytics/"
+        title="Configuring Analytics">Configuring Analytics</a>
+      
+      
+
+      
+    </li>
+  
+    <li class="">
+      <a href="/users/configuration/configuring_general_settings/"
+        title="Configuring Settings">Configuring Settings</a>
+      
+      
+
+      
+    </li>
+  
+    <li class="">
+      <a href="/users/configuration/configuring_geography/"
+        title="Configuring Geography">Configuring Geography</a>
+      
+      
+
+      
+    </li>
+  
+    <li class="">
+      <a href="/users/configuration/configuring_inventory/"
+        title="Configuring Inventory">Configuring Inventory</a>
+      
+      
+
+      
+    </li>
+  
+    <li class="">
+      <a href="/users/configuration/configuring_mail_ethods/"
+        title="Configuring Mail Methods">Configuring Mail Methods</a>
+      
+      
+
+      
+    </li>
+  
+    <li class="">
+      <a href="/users/configuration/configuring_shipping/"
+        title="Configuring Shipping">Configuring Shipping</a>
+      
+      
+
+      
+    </li>
+  
+    <li class="">
+      <a href="/users/configuration/configuring_taxes/"
+        title="Configuring Taxes">Configuring Taxes</a>
+      
+      
+
+      
+    </li>
+  
+    <li class="">
+      <a href="/users/configuration/configuring_taxonomies/"
+        title="Configuring Taxonomies">Configuring Taxonomies</a>
+      
+      
+
+      
+    </li>
+</ul>
+
+      
+    </li>
+  
+    <li class="">
+      <a href="/users/orders/"
+        title="Orders">Orders</a>
+      
+      
+
+<button class="expand-subnav"
+        aria-expanded="true"
+        aria-controls="nav-collapsible-3">+</button>
+<ul class="nav-children" id="nav-collapsible-3"
+    aria-hidden="false">
+  
+  
+    <li class="">
+      <a href="/users/orders/editing_orders/"
+        title="Editing Orders">Editing Orders</a>
+      
+      
+
+      
+    </li>
+  
+    <li class="">
+      <a href="/users/orders/enter_orders/"
+        title="Entering Orders">Entering Orders</a>
+      
+      
+
+      
+    </li>
+  
+    <li class="">
+      <a href="/users/orders/order_states/"
+        title="Order States">Order States</a>
+      
+      
+
+      
+    </li>
+  
+    <li class="">
+      <a href="/users/orders/processing_orders/"
+        title="Processing Orders">Processing Orders</a>
+      
+      
+
+      
+    </li>
+  
+    <li class="sidebar-nav-active">
+      <a href="/users/orders/returning_orders/"
+        title="Current Page">Returning Orders</a>
+      
+      
+
+      
+    </li>
+  
+    <li class="">
+      <a href="/users/orders/searching_orders/"
+        title="Searching Orders">Searching Orders</a>
+      
+      
+
+      
+    </li>
+</ul>
+
+      
+    </li>
+  
+    <li class="">
+      <a href="/users/payments/"
+        title="Payments">Payments</a>
+      
+      
+
+<button class="expand-subnav"
+        aria-expanded="false"
+        aria-controls="nav-collapsible-4">+</button>
+<ul class="nav-children" id="nav-collapsible-4"
+    aria-hidden="true">
+  
+  
+    <li class="">
+      <a href="/users/payments/payment_methods/"
+        title="Payment methods">Payment methods</a>
+      
+      
+
+      
+    </li>
+  
+    <li class="">
+      <a href="/users/payments/payment_states/"
+        title="Payment States">Payment States</a>
+      
+      
+
+      
+    </li>
+</ul>
+
+      
+    </li>
+  
+    <li class="">
+      <a href="/users/products/"
+        title="Products">Products</a>
+      
+      
+
+<button class="expand-subnav"
+        aria-expanded="false"
+        aria-controls="nav-collapsible-5">+</button>
+<ul class="nav-children" id="nav-collapsible-5"
+    aria-hidden="true">
+  
+  
+    <li class="">
+      <a href="/users/products/cloning_products/"
+        title="Cloning Products">Cloning Products</a>
+      
+      
+
+      
+    </li>
+  
+    <li class="">
+      <a href="/users/products/creating_products/"
+        title="Creating Products">Creating Products</a>
+      
+      
+
+      
+    </li>
+  
+    <li class="">
+      <a href="/users/products/deleting_products/"
+        title="Deleting Products">Deleting Products</a>
+      
+      
+
+      
+    </li>
+  
+    <li class="">
+      <a href="/users/products/editing_products/"
+        title="Editing Products">Editing Products</a>
+      
+      
+
+      
+    </li>
+  
+    <li class="">
+      <a href="/users/products/product_options/"
+        title="Product Options">Product Options</a>
+      
+      
+
+      
+    </li>
+  
+    <li class="">
+      <a href="/users/products/product_properties/"
+        title="Product Properties">Product Properties</a>
+      
+      
+
+      
+    </li>
+  
+    <li class="">
+      <a href="/users/products/product_prototypes/"
+        title="product_prototypes">product_prototypes</a>
+      
+      
+
+      
+    </li>
+  
+    <li class="">
+      <a href="/users/products/searching_products/"
+        title="Searching Products">Searching Products</a>
+      
+      
+
+      
+    </li>
+</ul>
+
+      
+    </li>
+  
+    <li class="">
+      <a href="/users/shipments/"
+        title="Shipments">Shipments</a>
+      
+      
+
+<button class="expand-subnav"
+        aria-expanded="false"
+        aria-controls="nav-collapsible-6">+</button>
+<ul class="nav-children" id="nav-collapsible-6"
+    aria-hidden="true">
+  
+  
+    <li class="">
+      <a href="/users/shipments/calculations/"
+        title="Calculations">Calculations</a>
+      
+      
+
+      
+    </li>
+  
+    <li class="">
+      <a href="/users/shipments/shipping_categories/"
+        title="Shipping Categories">Shipping Categories</a>
+      
+      
+
+      
+    </li>
+  
+    <li class="">
+      <a href="/users/shipments/shipping_methods/"
+        title="Shipping Methods">Shipping Methods</a>
+      
+      
+
+      
+    </li>
+  
+    <li class="">
+      <a href="/users/shipments/zones/"
+        title="Zones">Zones</a>
+      
+      
+
+      
+    </li>
+</ul>
+
+      
+    </li>
+  
+    <li class="">
+      <a href="/users/extensions/"
+        title="Extensions">Extensions</a>
+      
+      
+
+      
+    </li>
+  
+    <li class="">
+      <a href="/users/promotions/"
+        title="Promotions">Promotions</a>
+      
+      
+
+      
+    </li>
+  
+    <li class="">
+      <a href="/users/reports/"
+        title="Reports">Reports</a>
+      
+      
+
+      
+    </li>
+</ul>
+
+        </li>
+    </ul>
+  </nav>
+</aside>
+
+
+      </div><!-- /.wrap content -->
+
+      <footer role="contentinfo">
+  <div class="wrap">
+    <p>This project is maintained by <a href="https://solidus.io">Ash Kamel</a>. The source is available at <a href="https://github.com/ajkamel/solidus-guides">https://github.com/ajkamel/solidus-guides</a>.</p>
+
+    <p>Hosted on <a href="https://github.com/ajkamel/">Github</a>.
+    The <a href="https://github.com/ajkamel/solidus-guides/">Solidus Guides</a> is based on <a href="https://github.com/18F/guides-template/"> from <a href="https://github.com/cfpb/docter/">DOCter</a> from <a href="http://cfpb.github.io/">CFPB</a>.</p>
+    <p><a href="https://github.com/ajkamel/solidus-guides/edit/18f-pages/_pages/users/orders/returning_orders.md">Edit this page</a> or <a href="https://github.com/ajkamel/solidus-guides/issues">file an issue</a> on GitHub.</p>
+  </div><!--/.wrap -->
+</footer>
+
+
+    </div> <!-- /.container -->
+
+  </body>
+
+
+<script src="/assets/js/vendor/jquery-1.11.2.min.js"></script>
+<script src="/assets/js/accordion.js"></script>
+<script src="/assets/js/18f-guide.js"></script>
+<script>JEKYLL_PAGES_API_SEARCH_BASEURL = '';</script>
+<script async src="/assets/js/search-bundle.js"></script>
+
+</html>

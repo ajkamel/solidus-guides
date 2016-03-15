@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+  <head>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta charset="utf-8">
+  <title>Creating a New Product - Solidus Guides</title>
+  <meta name="viewport" content="width=device-width">
+  <link rel="shortcut icon" type="image/ico" href="/assets/favicons/favicon.ico" />
+  <link rel="icon" type="image/png" href="/assets/favicons/favicon.png" />
+  <link rel="apple-touch-icon-precomposed" href="/assets/favicons/18f-center-57.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/assets/favicons/18f-center-72.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/assets/favicons/18f-center-114.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/assets/favicons/18f-center-144.png"/>
+  <link rel="icon" type="image/png" sizes="192x192" href="/assets/favicons/18f-center-192.png" />
+  <link href='https://fonts.googleapis.com/css?family=Raleway:400,700%7COpen+Sans:400,400italic,600' rel='stylesheet' type='text/css' />
+  <link rel="stylesheet" href="/assets/css/styles.css" type='text/css' />
+  <!--[if lt IE 9]>
+    <script src="/assets/js/html5shiv.js"></script>
+    <script src="/assets/js/respond.js"></script>
+  <![endif]-->
+</head>
+
+
+  <body>
+
+    <div class="container">
+      <a class="skip-link visuallyhidden focusable" href="#main">Skip to Main Content</a>
+
+      <header role="banner">
+
+        <div class="wrap">
+
+
+          <h1 class="site-title"><a class="title-link" href="/">Solidus Guides</a></h1>
+
+          <form action="/search/" class="search-interface">
+  <div class="field">
+    <label>
+      <span class="label-text">Search</span>
+      <input type="search" id="search-input" name="q"
+       placeholder="Search - click or press '/'">
+    </label>
+  </div>
+  <button type="submit">Search</button>
+</form>
+
+
+          <div class="back-link"><a href="https://ajkamel.github.io/solidus-guides/">&laquo; Read more Solidus Guides</a></div>
+
+
+        </div>
+
+      </header>
+
+      <div class="wrap content">
+
+        <section id="main" class="main-content" role="main">
+          <h2>Creating a New Product</h2>
+          <h2>Introduction</h2>
+
+<p>To create a new product for your store, go into the Admin Interface, click the &quot;Products&quot; tab, and click the &quot;New Product&quot; button.</p>
+
+<p><img src="/images/user/products/new_product_entry_form.jpg" alt="New Product Entry Form"></p>
+
+<p>The two mandatory fields (&quot;Name&quot; and &quot;Master Price&quot;) are denoted with an asterisk (&#42;) next to the label. You can leave SKU blank. If you don&#39;t add a value for &quot;Available On&quot; the product will not be shown in your store.</p>
+
+<hr>
+
+<p><a href="product_prototypes">Prototypes</a> are a more complex topic, and are covered in their own guide.</p>
+
+<hr>
+
+<h2>Product Details</h2>
+
+<p>After you click the &quot;Create&quot; button, the Solidus application brings you to a more detailed product entry page, where you can input more information about your new product.</p>
+
+<p><img src="/images/user/products/product_edit_form.jpg" alt="Product Edit Form"></p>
+
+<ul>
+<li><strong>Name</strong> - This field will either be blank, or the same as what you entered on the initial page. You can change this field whenever you like.</li>
+<li><strong>Permalink</strong> - The permalink is automatically created by the application for you when the product is first saved, and is based on the product&#39;s name. This is what is appended to the end of a URL when someone visits the page for a particular product. You can change the permalink, but should exercise extreme caution in doing so to avoid naming collisions with other products in your database.</li>
+<li><strong>Description</strong> - This is where you will provide a detailed description of the product and its features. The application gives you plenty of room to be thorough.</li>
+<li><strong>Master Price</strong> - For now, just think about the Master Price as the price you charge someone to buy the item. Later in this guide, you will learn more about variants and how they impact a product&#39;s actual price.</li>
+<li><strong>Cost Price</strong> - What the item costs you, the seller, to purchase or produce.</li>
+<li><strong>Cost Currency</strong> - It may be that the currency used when you purchased the product is not the same as that you use in your store. Solidus makes these conversions for you - just enter the code for the currency used in acquiring your inventory.</li>
+<li><strong>Available On</strong> - This field will either be blank, or the same as what you entered on the initial page. You can change this field whenever you like.</li>
+<li><strong>SKU</strong> - This field will either be blank, or the same as what you entered on the initial page. You can change this field whenever you like.</li>
+<li><strong>Weight</strong> - The product&#39;s weight in ounces. May be used to calculate shipping cost.</li>
+<li><strong>Height</strong> - The product&#39;s height in inches. May be used to calculate shipping cost.</li>
+<li><strong>Width</strong> - The product&#39;s width in inches. May be used to calculate shipping cost.</li>
+<li><strong>Depth</strong> - The product&#39;s depth or breadth in inches. May be used to calculate shipping cost.</li>
+<li><strong>Shipping Categories</strong> - You will learn about setting up Shipping Categories in the <a href="shipping_categories">Shipping Categories</a>.</li>
+<li><strong>Tax Category</strong> - You will learn about setting up Tax Categories in the <a href="configuring_taxes">Taxes Guide</a>.</li>
+<li><strong>Taxons</strong> - Taxons are basically like categories. You will learn more about them in the <a href="configuring_taxonomies">Taxonomies Guide</a>.</li>
+<li><strong>Option Types</strong> - You can select any number of Options to associate your new product with. You&#39;ll learn more about Options in the <a href="product_options">Options Guide</a>.</li>
+<li><strong>Meta Keywords</strong> - These words are appended to the website&#39;s keywords you established in the <a href="configuring_general_settings">Site Settings</a> and can help improve your site&#39;s search engine ratings, bringing you more web traffic. They should be words that are key to your new product.</li>
+<li><strong>Meta Description</strong> - The summary that someone sees when your product&#39;s page is returned in a web search. It should be descriptive but not overly verbose.</li>
+</ul>
+
+<h2>Images</h2>
+
+<p>A store whose products had no images to look at would be pretty boring, and probably not garner a lot of sales. It would be very time-consuming to have to upload, crop, resize, and associate several photos to each product, if you had to do so manually. Luckily, Solidus makes maintaining images of your products quick and painless.</p>
+
+<p>Just click the &quot;Images&quot; link under &quot;Product Details&quot; on the right-hand side of the screen. Any images that you may have already uploaded will be previewed for you. To add a new image for your product, click the &quot;New Image&quot; button.</p>
+
+<p><img src="/images/user/products/new_image_form.jpg" alt="New Product Image Form"></p>
+
+<p>Select the Image file, and enter the Alternative Text for the image. Alternative Text is what appears when someone has their browser&#39;s image-rendering turned off, as with certain types of screen readers.</p>
+
+<p>You have the option to associate a photo only with a particular &quot;Variant&quot; (again, more on Variants later in this guide), or with all of the product&#39;s Variants.</p>
+
+<p>When you click Update, not only is the product photo uploaded, it is automatically resized and cropped to fit your store&#39;s requirements, and it is associated with the correct versions of your product.</p>
+
+<h2>Understanding Variants</h2>
+
+<p>Suppose that in your store, you sell drink tumblers. All of the tumblers are made by the same manufacturer and have the same basic product specifications (materials used, machine washability rating, etc.), but your inventory includes several options:</p>
+
+<ul>
+<li><strong>Size</strong> - You carry both Medium and Large tumblers</li>
+<li><strong>Decorative Wrap</strong> - Your tumblers come with the option of several kinds of decorative plastic wraps: Stars, Owls, Pink Paisley, Purple Paisley, or Skulls.</li>
+<li><strong>Lid Color</strong> - The tumblers also come with with an assortment of lids to match the decorative wrap - the Star tumblers have Blue lids, the Owls have Orange lids, the Pink Paisley have Pink lids, the Purple Paisley have White lids, and the Skulls can be purchased with White <em>or</em> Black lids.</li>
+</ul>
+
+<p>Given this inventory, you will need to create a Drink Tumbler <em>Product</em>, with three <em>Option Types</em>, the corresponding <em>Option Values</em>, and twelve <em>Variants</em>:</p>
+
+<p>Size  | Wrap | Lid Color
+|-----|------|---------|
+Large | Stars | Blue
+Small | Stars | Blue
+Large | Owls  | Orange
+Small | Owls  | Orange
+Large | Pink Paisley | Pink
+Small | Pink Paisley | Pink
+Large | Purple Paisley | White
+Small | Purple Paisley | White
+Large | Skulls | White
+Large | Skulls | Black
+Small | Skulls | White
+Small | Skulls | Black</p>
+
+<p>The <em>Option Types</em> you would create for this inventory are - Size, Wrap, and Lid Color - with the corresponding <em>Option Values</em> below.</p>
+
+<p>Option Type | Option Values
+|-----------|--------------|
+Size        | Large, Small
+Wrap        | Stars, Owls, Pink Paisley, Purple Paisley, Skulls
+Lid Color   | Blue, Orange, Pink, White, Black</p>
+
+<p>Read the <a href="product_options">Product Options Guide</a> for directions on creating Option Types and Option Values. You must establish your Option Types and Option Values before you can set up your Variants. Don&#39;t forget to associate the Option Types with the Tumbler product so they&#39;ll be available to you when you make your Variants.</p>
+
+<h3>Creating Variants</h3>
+
+<p>Now that you have set up the appropriate options for your Product&#39;s Variants and associated those options with the product, you can create the Variants themselves.</p>
+
+<p>Let&#39;s create the large, star-wrapped, blue-lidded tumbler Variant as an example. You can then use the same approach to creating all of the other Variants we mentioned earlier.</p>
+
+<p>On your tumbler product edit page, click the &quot;Variants&quot; link. Click the &quot;New Variant&quot; button.</p>
+
+<p><img src="/images/user/products/new_variant.jpg" alt="New Product Variant"></p>
+
+<p>Select the appropriate values for the Option Types. As you can see, you also have the choice to enter values for this particular Variant that may be different from what you input on the Product&#39;s main page. Let&#39;s raise the price on our Variant to $20. Click the &quot;Create&quot; button.</p>
+
+<p><img src="/images/user/products/variants_list.jpg" alt="Variants List"></p>
+
+<h2>Product Properties</h2>
+
+<p>You can set as many individual product properties as you like. These include things like the item&#39;s country of manufacture, material(s) used, design style, etc. Typically, these are characteristics that do not change across variants of a product.</p>
+
+<p>You can read much more in-depth information about this feature in the <a href="product_properties">Product Properties Guide</a>.</p>
+
+<h2>Stock Management</h2>
+
+<p>As of version 2.0 of Solidus, you now have much more granular control over how inventory is tracked through your store. You will learn more about stock locations in the <a href="stock_locations">Stock Locations Guide</a>, but for now it&#39;s enough to understand that you enter the number of each product variant that you have at each of your individual stock locations.</p>
+
+<p>Let&#39;s assume that you have two stock locations - your main New York warehouse and your satellite Detroit warehouse. Refer to the instructions on creating stock locations in the <a href="stock_locations#create-a-new-stock-location">Stock Locations Guide</a> to add your warehouses.</p>
+
+<p>Now, go back to the Tumblers product page, and click the &quot;Stock Management&quot; link.</p>
+
+<p><img src="/images/user/products/stock_management.jpg" alt="Stock Management Page"></p>
+
+<p>For this guide, let&#39;s say we want to say that we have 7 of our tumbler variant in the New York warehouse, and 3 in Detroit. To accomplish this, change the quantity to 7, select &quot;New York Warehouse&quot; from the &quot;Stock Location&quot; drop-down list, and select &quot;large-blue-stars&quot; from the &quot;Variant&quot; drop-down list. Click the &quot;Add Stock button&quot;.</p>
+
+<p>The &quot;Stock Location Info&quot; table will update, showing you that there are 7 of these items in the New York warehouse. Repeat these steps, adding 3 tumblers from the Detroit warehouse.</p>
+
+<p><img src="/images/user/products/stock_location_info.jpg" alt="Stock Location Info"></p>
+
+<p>Your Stock Location Info table should now look like the one pictured above.</p>
+
+<hr>
+
+<p>&quot;Backorderable&quot; may or may not be checked for your individual Stock Locations, depending on how you configured them. Each Stock Location has defaults for this value, but you can change it on a variant-by-variant basis in this dialog.</p>
+
+<hr>
+
+<p>You should be sure to read the <a href="configuring_inventory.html#stock-locations">Stock Locations</a> and <a href="configuring_inventory.html#stock-movements">Stock Movements</a> guides for further information on managing your store&#39;s inventory.</p>
+
+        </section>
+
+        <aside>
+  <p class="intro"></p>
+  <nav class="sidebar-nav" role="navigation">
+    <ul>
+        <li class="group ">
+          <a href="/"  
+            title="Introduction">Introduction</a>
+          
+          
+
+        </li>
+        <li class="group ">
+          <a href="/users/"  
+            title="Users">Users</a>
+          
+          
+
+<button class="expand-subnav"
+        aria-expanded="true"
+        aria-controls="nav-collapsible-2">+</button>
+<ul class="nav-children" id="nav-collapsible-2"
+    aria-hidden="false">
+  
+  
+    <li class="">
+      <a href="/users/overview/"
+        title="Overview">Overview</a>
+      
+      
+
+      
+    </li>
+  
+    <li class="">
+      <a href="/users/configuration/"
+        title="Configuration">Configuration</a>
+      
+      
+
+<button class="expand-subnav"
+        aria-expanded="false"
+        aria-controls="nav-collapsible-2">+</button>
+<ul class="nav-children" id="nav-collapsible-2"
+    aria-hidden="true">
+  
+  
+    <li class="">
+      <a href="/users/configuration/configuring_analytics/"
+        title="Configuring Analytics">Configuring Analytics</a>
+      
+      
+
+      
+    </li>
+  
+    <li class="">
+      <a href="/users/configuration/configuring_general_settings/"
+        title="Configuring Settings">Configuring Settings</a>
+      
+      
+
+      
+    </li>
+  
+    <li class="">
+      <a href="/users/configuration/configuring_geography/"
+        title="Configuring Geography">Configuring Geography</a>
+      
+      
+
+      
+    </li>
+  
+    <li class="">
+      <a href="/users/configuration/configuring_inventory/"
+        title="Configuring Inventory">Configuring Inventory</a>
+      
+      
+
+      
+    </li>
+  
+    <li class="">
+      <a href="/users/configuration/configuring_mail_ethods/"
+        title="Configuring Mail Methods">Configuring Mail Methods</a>
+      
+      
+
+      
+    </li>
+  
+    <li class="">
+      <a href="/users/configuration/configuring_shipping/"
+        title="Configuring Shipping">Configuring Shipping</a>
+      
+      
+
+      
+    </li>
+  
+    <li class="">
+      <a href="/users/configuration/configuring_taxes/"
+        title="Configuring Taxes">Configuring Taxes</a>
+      
+      
+
+      
+    </li>
+  
+    <li class="">
+      <a href="/users/configuration/configuring_taxonomies/"
+        title="Configuring Taxonomies">Configuring Taxonomies</a>
+      
+      
+
+      
+    </li>
+</ul>
+
+      
+    </li>
+  
+    <li class="">
+      <a href="/users/orders/"
+        title="Orders">Orders</a>
+      
+      
+
+<button class="expand-subnav"
+        aria-expanded="false"
+        aria-controls="nav-collapsible-3">+</button>
+<ul class="nav-children" id="nav-collapsible-3"
+    aria-hidden="true">
+  
+  
+    <li class="">
+      <a href="/users/orders/editing_orders/"
+        title="Editing Orders">Editing Orders</a>
+      
+      
+
+      
+    </li>
+  
+    <li class="">
+      <a href="/users/orders/enter_orders/"
+        title="Entering Orders">Entering Orders</a>
+      
+      
+
+      
+    </li>
+  
+    <li class="">
+      <a href="/users/orders/order_states/"
+        title="Order States">Order States</a>
+      
+      
+
+      
+    </li>
+  
+    <li class="">
+      <a href="/users/orders/processing_orders/"
+        title="Processing Orders">Processing Orders</a>
+      
+      
+
+      
+    </li>
+  
+    <li class="">
+      <a href="/users/orders/returning_orders/"
+        title="Returning Orders">Returning Orders</a>
+      
+      
+
+      
+    </li>
+  
+    <li class="">
+      <a href="/users/orders/searching_orders/"
+        title="Searching Orders">Searching Orders</a>
+      
+      
+
+      
+    </li>
+</ul>
+
+      
+    </li>
+  
+    <li class="">
+      <a href="/users/payments/"
+        title="Payments">Payments</a>
+      
+      
+
+<button class="expand-subnav"
+        aria-expanded="false"
+        aria-controls="nav-collapsible-4">+</button>
+<ul class="nav-children" id="nav-collapsible-4"
+    aria-hidden="true">
+  
+  
+    <li class="">
+      <a href="/users/payments/payment_methods/"
+        title="Payment methods">Payment methods</a>
+      
+      
+
+      
+    </li>
+  
+    <li class="">
+      <a href="/users/payments/payment_states/"
+        title="Payment States">Payment States</a>
+      
+      
+
+      
+    </li>
+</ul>
+
+      
+    </li>
+  
+    <li class="">
+      <a href="/users/products/"
+        title="Products">Products</a>
+      
+      
+
+<button class="expand-subnav"
+        aria-expanded="true"
+        aria-controls="nav-collapsible-5">+</button>
+<ul class="nav-children" id="nav-collapsible-5"
+    aria-hidden="false">
+  
+  
+    <li class="">
+      <a href="/users/products/cloning_products/"
+        title="Cloning Products">Cloning Products</a>
+      
+      
+
+      
+    </li>
+  
+    <li class="sidebar-nav-active">
+      <a href="/users/products/creating_products/"
+        title="Current Page">Creating Products</a>
+      
+      
+
+      
+    </li>
+  
+    <li class="">
+      <a href="/users/products/deleting_products/"
+        title="Deleting Products">Deleting Products</a>
+      
+      
+
+      
+    </li>
+  
+    <li class="">
+      <a href="/users/products/editing_products/"
+        title="Editing Products">Editing Products</a>
+      
+      
+
+      
+    </li>
+  
+    <li class="">
+      <a href="/users/products/product_options/"
+        title="Product Options">Product Options</a>
+      
+      
+
+      
+    </li>
+  
+    <li class="">
+      <a href="/users/products/product_properties/"
+        title="Product Properties">Product Properties</a>
+      
+      
+
+      
+    </li>
+  
+    <li class="">
+      <a href="/users/products/product_prototypes/"
+        title="product_prototypes">product_prototypes</a>
+      
+      
+
+      
+    </li>
+  
+    <li class="">
+      <a href="/users/products/searching_products/"
+        title="Searching Products">Searching Products</a>
+      
+      
+
+      
+    </li>
+</ul>
+
+      
+    </li>
+  
+    <li class="">
+      <a href="/users/shipments/"
+        title="Shipments">Shipments</a>
+      
+      
+
+<button class="expand-subnav"
+        aria-expanded="false"
+        aria-controls="nav-collapsible-6">+</button>
+<ul class="nav-children" id="nav-collapsible-6"
+    aria-hidden="true">
+  
+  
+    <li class="">
+      <a href="/users/shipments/calculations/"
+        title="Calculations">Calculations</a>
+      
+      
+
+      
+    </li>
+  
+    <li class="">
+      <a href="/users/shipments/shipping_categories/"
+        title="Shipping Categories">Shipping Categories</a>
+      
+      
+
+      
+    </li>
+  
+    <li class="">
+      <a href="/users/shipments/shipping_methods/"
+        title="Shipping Methods">Shipping Methods</a>
+      
+      
+
+      
+    </li>
+  
+    <li class="">
+      <a href="/users/shipments/zones/"
+        title="Zones">Zones</a>
+      
+      
+
+      
+    </li>
+</ul>
+
+      
+    </li>
+  
+    <li class="">
+      <a href="/users/extensions/"
+        title="Extensions">Extensions</a>
+      
+      
+
+      
+    </li>
+  
+    <li class="">
+      <a href="/users/promotions/"
+        title="Promotions">Promotions</a>
+      
+      
+
+      
+    </li>
+  
+    <li class="">
+      <a href="/users/reports/"
+        title="Reports">Reports</a>
+      
+      
+
+      
+    </li>
+</ul>
+
+        </li>
+    </ul>
+  </nav>
+</aside>
+
+
+      </div><!-- /.wrap content -->
+
+      <footer role="contentinfo">
+  <div class="wrap">
+    <p>This project is maintained by <a href="https://solidus.io">Ash Kamel</a>. The source is available at <a href="https://github.com/ajkamel/solidus-guides">https://github.com/ajkamel/solidus-guides</a>.</p>
+
+    <p>Hosted on <a href="https://github.com/ajkamel/">Github</a>.
+    The <a href="https://github.com/ajkamel/solidus-guides/">Solidus Guides</a> is based on <a href="https://github.com/18F/guides-template/"> from <a href="https://github.com/cfpb/docter/">DOCter</a> from <a href="http://cfpb.github.io/">CFPB</a>.</p>
+    <p><a href="https://github.com/ajkamel/solidus-guides/edit/18f-pages/_pages/users/products/creating_products.md">Edit this page</a> or <a href="https://github.com/ajkamel/solidus-guides/issues">file an issue</a> on GitHub.</p>
+  </div><!--/.wrap -->
+</footer>
+
+
+    </div> <!-- /.container -->
+
+  </body>
+
+
+<script src="/assets/js/vendor/jquery-1.11.2.min.js"></script>
+<script src="/assets/js/accordion.js"></script>
+<script src="/assets/js/18f-guide.js"></script>
+<script>JEKYLL_PAGES_API_SEARCH_BASEURL = '';</script>
+<script async src="/assets/js/search-bundle.js"></script>
+
+</html>

@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+  <head>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta charset="utf-8">
+  <title>Inventory Settings - Solidus Guides</title>
+  <meta name="viewport" content="width=device-width">
+  <link rel="shortcut icon" type="image/ico" href="/assets/favicons/favicon.ico" />
+  <link rel="icon" type="image/png" href="/assets/favicons/favicon.png" />
+  <link rel="apple-touch-icon-precomposed" href="/assets/favicons/18f-center-57.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/assets/favicons/18f-center-72.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/assets/favicons/18f-center-114.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/assets/favicons/18f-center-144.png"/>
+  <link rel="icon" type="image/png" sizes="192x192" href="/assets/favicons/18f-center-192.png" />
+  <link href='https://fonts.googleapis.com/css?family=Raleway:400,700%7COpen+Sans:400,400italic,600' rel='stylesheet' type='text/css' />
+  <link rel="stylesheet" href="/assets/css/styles.css" type='text/css' />
+  <!--[if lt IE 9]>
+    <script src="/assets/js/html5shiv.js"></script>
+    <script src="/assets/js/respond.js"></script>
+  <![endif]-->
+</head>
+
+
+  <body>
+
+    <div class="container">
+      <a class="skip-link visuallyhidden focusable" href="#main">Skip to Main Content</a>
+
+      <header role="banner">
+
+        <div class="wrap">
+
+
+          <h1 class="site-title"><a class="title-link" href="/">Solidus Guides</a></h1>
+
+          <form action="/search/" class="search-interface">
+  <div class="field">
+    <label>
+      <span class="label-text">Search</span>
+      <input type="search" id="search-input" name="q"
+       placeholder="Search - click or press '/'">
+    </label>
+  </div>
+  <button type="submit">Search</button>
+</form>
+
+
+          <div class="back-link"><a href="https://ajkamel.github.io/solidus-guides/">&laquo; Read more Solidus Guides</a></div>
+
+
+        </div>
+
+      </header>
+
+      <div class="wrap content">
+
+        <section id="main" class="main-content" role="main">
+          <h2>Inventory Settings</h2>
+          <h2>Introduction</h2>
+
+<p>The Solidus store gives you a great deal of leverage in managing your business&#39; inventory. You can set up multiple <a href="#stock-locations">stock locations</a>, each of which represents a physical location at which you store your products for delivery to customers. As you add new products and make sales, <a href="#stock-movements">stock movements</a> are recorded. You can receive stock from a supplier, and even move products from one stock location to another by recording <a href="#stock-transfers">stock transfers</a>. All of this helps to keep your inventorying manageable and current.</p>
+
+<h3>Stock Locations</h3>
+
+<p>To reach the Stock Locations management panel, go to your Admin Interface, click &quot;Configuration&quot;, then click &quot;Stock Locations&quot;. Your store should already have at least one default stock location. If you keep all of your inventory in one place, this may be all you need.</p>
+
+<h4>Create a New Stock Location</h4>
+
+<p>To add a stock location to your store, click the &quot;New Stock Location&quot; button.</p>
+
+<p><img src="/images/user/config/new_stock_location.jpg" alt="New Stock Location"></p>
+
+<p>Here, you can input everything of relevance about your stock location: name, address, and phone are the most obvious. The three checkboxes on the right-hand side merit more explanation:</p>
+
+<ul>
+<li><strong>Active</strong> - Denotes whether the stock location is currently in operation and serving inventory for orders.</li>
+<li><strong>Backorderable Default</strong> - Controls whether inventory items at this location can be backordered when they run out. You can still change this on an item-by-item basis as needed.</li>
+<li><strong>Propagate All Variants</strong> - Checking this option when you create a new stock location will loop through all of the products you already have in your store, and create an entry for each one at your new location, with a starting inventory amount of 0.</li>
+</ul>
+
+<p>Input the values for all of the fields, and click &quot;Create&quot; to add your new stock location.</p>
+
+<h4>Edit a Stock Location</h4>
+
+<p>To edit a stock location, click the &quot;Edit&quot; icon next to it in the Stock Locations list.</p>
+
+<p><img src="/images/user/config/edit_stock_location_icon.jpg" alt="Edit Stock Location Icon"></p>
+
+<p>Make the desired changes in the form and click &quot;Update&quot;.</p>
+
+<h4>Delete a Stock Location</h4>
+
+<p>To remove a stock location, click the &quot;Delete&quot; icon next to it in the Stock Locations list.</p>
+
+<p><img src="/images/user/config/delete_stock_location_icon.jpg" alt="Delete Stock Location Icon"></p>
+
+<p>Click &quot;OK&quot; to confirm the deletion.</p>
+
+<h3>Stock Movements</h3>
+
+<p>Notice the &quot;Stock Movements&quot; link on the Stock Locations list.</p>
+
+<p><img src="/images/user/config/stock_movements_link.jpg" alt="Stock Movements Link"></p>
+
+<p>Clicking this link will show you all of the stock movements that have taken place for this stock location, both positive and negative.</p>
+
+<p>Stock movements are actions that happen automatically through the normal management and functioning of your store. You do not have to (and in fact, can not) manually manipulate them. This is just a way for you to see which things are moving in and out of a particular stock location.</p>
+
+<h3>Stock Transfers</h3>
+
+<p>If you have more than one stock location, your Solidus store offers you a way to record the movement on inventory from one location to another: the stock transfer.</p>
+
+<p>To create a new stock transfer, go to your Admin Interface, click &quot;Configuration&quot;, then &quot;Stock Transfers&quot;, then click the &quot;New Stock Transfer&quot; button.</p>
+
+<p><img src="/images/user/config/new_stock_transfer.jpg" alt="New Stock Transfer"></p>
+
+<p>You can enter an optional Reference Number - this could correlate to a PO number, a transfer request number, a tracking number, or any other identifier you wish to use.</p>
+
+<p>Next, select your Source and Destination stock locations. If you are receiving stock from a supplier, check the &quot;Receive Stock&quot; checkbox and the &quot;Source&quot; drop-down box will be hidden.</p>
+
+<p>Select a product variant from the &quot;Variant&quot; drop-down list and enter the quantity of that product being transferred. Click the &quot;Add&quot; button.</p>
+
+<p><img src="/images/user/config/stock_transfer.jpg" alt="Stock Transfer Readied"></p>
+
+<hr>
+
+<p>If you try to transfer an item that you do not have in stock at your Source location, the Solidus system will record a stock transfer with a quantity of 0.</p>
+
+<hr>
+
+<p>The new stock transfer is readied. Once you have added all of the items you want to transfer, click the &quot;Transfer Stock&quot; button.</p>
+
+<p><img src="/images/user/config/stock_transfer_complete.jpg" alt="Stock Transfer Complete"></p>
+
+<p>Now when you look at the <a href="#stock-movements">Stock Movements</a> for each of the stock locations, you see that there are two new entries that correspond to the stock transfer, both with a system-assigned &quot;Action&quot; number (actually, the id for the stock transfer).</p>
+
+<p><img src="/images/user/config/resulting_stock_movements.jpg" alt="Resulting Stock Movements"></p>
+
+        </section>
+
+        <aside>
+  <p class="intro"></p>
+  <nav class="sidebar-nav" role="navigation">
+    <ul>
+        <li class="group ">
+          <a href="/"  
+            title="Introduction">Introduction</a>
+          
+          
+
+        </li>
+        <li class="group ">
+          <a href="/users/"  
+            title="Users">Users</a>
+          
+          
+
+<button class="expand-subnav"
+        aria-expanded="true"
+        aria-controls="nav-collapsible-2">+</button>
+<ul class="nav-children" id="nav-collapsible-2"
+    aria-hidden="false">
+  
+  
+    <li class="">
+      <a href="/users/overview/"
+        title="Overview">Overview</a>
+      
+      
+
+      
+    </li>
+  
+    <li class="">
+      <a href="/users/configuration/"
+        title="Configuration">Configuration</a>
+      
+      
+
+<button class="expand-subnav"
+        aria-expanded="true"
+        aria-controls="nav-collapsible-2">+</button>
+<ul class="nav-children" id="nav-collapsible-2"
+    aria-hidden="false">
+  
+  
+    <li class="">
+      <a href="/users/configuration/configuring_analytics/"
+        title="Configuring Analytics">Configuring Analytics</a>
+      
+      
+
+      
+    </li>
+  
+    <li class="">
+      <a href="/users/configuration/configuring_general_settings/"
+        title="Configuring Settings">Configuring Settings</a>
+      
+      
+
+      
+    </li>
+  
+    <li class="">
+      <a href="/users/configuration/configuring_geography/"
+        title="Configuring Geography">Configuring Geography</a>
+      
+      
+
+      
+    </li>
+  
+    <li class="sidebar-nav-active">
+      <a href="/users/configuration/configuring_inventory/"
+        title="Current Page">Configuring Inventory</a>
+      
+      
+
+      
+    </li>
+  
+    <li class="">
+      <a href="/users/configuration/configuring_mail_ethods/"
+        title="Configuring Mail Methods">Configuring Mail Methods</a>
+      
+      
+
+      
+    </li>
+  
+    <li class="">
+      <a href="/users/configuration/configuring_shipping/"
+        title="Configuring Shipping">Configuring Shipping</a>
+      
+      
+
+      
+    </li>
+  
+    <li class="">
+      <a href="/users/configuration/configuring_taxes/"
+        title="Configuring Taxes">Configuring Taxes</a>
+      
+      
+
+      
+    </li>
+  
+    <li class="">
+      <a href="/users/configuration/configuring_taxonomies/"
+        title="Configuring Taxonomies">Configuring Taxonomies</a>
+      
+      
+
+      
+    </li>
+</ul>
+
+      
+    </li>
+  
+    <li class="">
+      <a href="/users/orders/"
+        title="Orders">Orders</a>
+      
+      
+
+<button class="expand-subnav"
+        aria-expanded="false"
+        aria-controls="nav-collapsible-3">+</button>
+<ul class="nav-children" id="nav-collapsible-3"
+    aria-hidden="true">
+  
+  
+    <li class="">
+      <a href="/users/orders/editing_orders/"
+        title="Editing Orders">Editing Orders</a>
+      
+      
+
+      
+    </li>
+  
+    <li class="">
+      <a href="/users/orders/enter_orders/"
+        title="Entering Orders">Entering Orders</a>
+      
+      
+
+      
+    </li>
+  
+    <li class="">
+      <a href="/users/orders/order_states/"
+        title="Order States">Order States</a>
+      
+      
+
+      
+    </li>
+  
+    <li class="">
+      <a href="/users/orders/processing_orders/"
+        title="Processing Orders">Processing Orders</a>
+      
+      
+
+      
+    </li>
+  
+    <li class="">
+      <a href="/users/orders/returning_orders/"
+        title="Returning Orders">Returning Orders</a>
+      
+      
+
+      
+    </li>
+  
+    <li class="">
+      <a href="/users/orders/searching_orders/"
+        title="Searching Orders">Searching Orders</a>
+      
+      
+
+      
+    </li>
+</ul>
+
+      
+    </li>
+  
+    <li class="">
+      <a href="/users/payments/"
+        title="Payments">Payments</a>
+      
+      
+
+<button class="expand-subnav"
+        aria-expanded="false"
+        aria-controls="nav-collapsible-4">+</button>
+<ul class="nav-children" id="nav-collapsible-4"
+    aria-hidden="true">
+  
+  
+    <li class="">
+      <a href="/users/payments/payment_methods/"
+        title="Payment methods">Payment methods</a>
+      
+      
+
+      
+    </li>
+  
+    <li class="">
+      <a href="/users/payments/payment_states/"
+        title="Payment States">Payment States</a>
+      
+      
+
+      
+    </li>
+</ul>
+
+      
+    </li>
+  
+    <li class="">
+      <a href="/users/products/"
+        title="Products">Products</a>
+      
+      
+
+<button class="expand-subnav"
+        aria-expanded="false"
+        aria-controls="nav-collapsible-5">+</button>
+<ul class="nav-children" id="nav-collapsible-5"
+    aria-hidden="true">
+  
+  
+    <li class="">
+      <a href="/users/products/cloning_products/"
+        title="Cloning Products">Cloning Products</a>
+      
+      
+
+      
+    </li>
+  
+    <li class="">
+      <a href="/users/products/creating_products/"
+        title="Creating Products">Creating Products</a>
+      
+      
+
+      
+    </li>
+  
+    <li class="">
+      <a href="/users/products/deleting_products/"
+        title="Deleting Products">Deleting Products</a>
+      
+      
+
+      
+    </li>
+  
+    <li class="">
+      <a href="/users/products/editing_products/"
+        title="Editing Products">Editing Products</a>
+      
+      
+
+      
+    </li>
+  
+    <li class="">
+      <a href="/users/products/product_options/"
+        title="Product Options">Product Options</a>
+      
+      
+
+      
+    </li>
+  
+    <li class="">
+      <a href="/users/products/product_properties/"
+        title="Product Properties">Product Properties</a>
+      
+      
+
+      
+    </li>
+  
+    <li class="">
+      <a href="/users/products/product_prototypes/"
+        title="product_prototypes">product_prototypes</a>
+      
+      
+
+      
+    </li>
+  
+    <li class="">
+      <a href="/users/products/searching_products/"
+        title="Searching Products">Searching Products</a>
+      
+      
+
+      
+    </li>
+</ul>
+
+      
+    </li>
+  
+    <li class="">
+      <a href="/users/shipments/"
+        title="Shipments">Shipments</a>
+      
+      
+
+<button class="expand-subnav"
+        aria-expanded="false"
+        aria-controls="nav-collapsible-6">+</button>
+<ul class="nav-children" id="nav-collapsible-6"
+    aria-hidden="true">
+  
+  
+    <li class="">
+      <a href="/users/shipments/calculations/"
+        title="Calculations">Calculations</a>
+      
+      
+
+      
+    </li>
+  
+    <li class="">
+      <a href="/users/shipments/shipping_categories/"
+        title="Shipping Categories">Shipping Categories</a>
+      
+      
+
+      
+    </li>
+  
+    <li class="">
+      <a href="/users/shipments/shipping_methods/"
+        title="Shipping Methods">Shipping Methods</a>
+      
+      
+
+      
+    </li>
+  
+    <li class="">
+      <a href="/users/shipments/zones/"
+        title="Zones">Zones</a>
+      
+      
+
+      
+    </li>
+</ul>
+
+      
+    </li>
+  
+    <li class="">
+      <a href="/users/extensions/"
+        title="Extensions">Extensions</a>
+      
+      
+
+      
+    </li>
+  
+    <li class="">
+      <a href="/users/promotions/"
+        title="Promotions">Promotions</a>
+      
+      
+
+      
+    </li>
+  
+    <li class="">
+      <a href="/users/reports/"
+        title="Reports">Reports</a>
+      
+      
+
+      
+    </li>
+</ul>
+
+        </li>
+    </ul>
+  </nav>
+</aside>
+
+
+      </div><!-- /.wrap content -->
+
+      <footer role="contentinfo">
+  <div class="wrap">
+    <p>This project is maintained by <a href="https://solidus.io">Ash Kamel</a>. The source is available at <a href="https://github.com/ajkamel/solidus-guides">https://github.com/ajkamel/solidus-guides</a>.</p>
+
+    <p>Hosted on <a href="https://github.com/ajkamel/">Github</a>.
+    The <a href="https://github.com/ajkamel/solidus-guides/">Solidus Guides</a> is based on <a href="https://github.com/18F/guides-template/"> from <a href="https://github.com/cfpb/docter/">DOCter</a> from <a href="http://cfpb.github.io/">CFPB</a>.</p>
+    <p><a href="https://github.com/ajkamel/solidus-guides/edit/18f-pages/_pages/users/configuration/configuring_inventory.md">Edit this page</a> or <a href="https://github.com/ajkamel/solidus-guides/issues">file an issue</a> on GitHub.</p>
+  </div><!--/.wrap -->
+</footer>
+
+
+    </div> <!-- /.container -->
+
+  </body>
+
+
+<script src="/assets/js/vendor/jquery-1.11.2.min.js"></script>
+<script src="/assets/js/accordion.js"></script>
+<script src="/assets/js/18f-guide.js"></script>
+<script>JEKYLL_PAGES_API_SEARCH_BASEURL = '';</script>
+<script async src="/assets/js/search-bundle.js"></script>
+
+</html>
