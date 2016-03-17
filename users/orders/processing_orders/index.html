@@ -59,7 +59,7 @@
           <h2>Processing Orders</h2>
           <h2>Introduction</h2>
 
-<p>Once an order comes into your store - whether it is entered by a customer through the website frontend or you <a href="entering_orders">manually enter it yourself</a> through the admin backend - it needs to be processed. That means these steps need to be taken:</p>
+<p>Once an order comes into your store - whether it is entered by a customer through the website frontend or you <a href="/solidus-guides/users/orders/entering_orders">manually enter it yourself</a> through the admin backend - it needs to be processed. That means these steps need to be taken:</p>
 
 <ol>
 <li>Verify that the products are, in fact, in stock and shippable.</li>
@@ -76,19 +76,21 @@
 
 <p>Now you need to process the payment on the order. You know best how your store processes things like checks, money orders, and cash, so this guide will focus on processing credit card payments.</p>
 
-<p><img src="/images/user/orders/order_to_process.jpg" alt="Order to Process"></p>
+<p><img src="/solidus-guides/assets/img/users/orders/order_to_process.png" alt="Order to Process"></p>
 
 <p>Pictured above is an order that is ripe for processing. The current order State is &quot;Complete&quot;, meaning that all of the information the customer needs to provide is present. The Payment State is &quot;Balance Due&quot;, meaning that there is an unpaid balance on the order. The Shipment State is &quot;Pending&quot;, because you can&#39;t ship an order before you collect payment on it.</p>
 
 <p>If you click either the Order Number or the &quot;Edit&quot; icon, you will open the order in Edit mode. Instead, click the &quot;Balance Due&quot; payment state to open the order&#39;s payment info page.</p>
 
-<p><img src="/images/user/orders/payment_to_process.jpg" alt="Payment to Process"></p>
+<h2>Approving Payment</h2>
 
-<p>As you can see above, we have only a single payment to process, for the full amount ($22.59). Processing this payment is literally a click away - just click on the &quot;Capture&quot; icon next to the payment.</p>
+<p><img src="/solidus-guides/assets/img/users/orders/payment_to_process.png" alt="Payment to Process"></p>
+
+<p>As you can see above, we have only a single payment to process, for the full amount ($22.04). Processing this payment is literally a click away - just click on the the &quot;Payments Tab&quot; and then click &quot;Capture&quot; icon next payment.</p>
 
 <p>If the payment is processed successfully, the page will re-load, showing you that the payment state has progressed from &quot;Pending&quot; to &quot;Completed&quot;.</p>
 
-<p><img src="/images/user/orders/completed_payment.jpg" alt="Completed Payment"></p>
+<p><img src="/solidus-guides/assets/img/users/orders/completed_payment.png" alt="Completed Payment"></p>
 
 <p>That&#39;s it! Now you can prepare your packages for shipment, then update the order with the shipment information.</p>
 
@@ -96,15 +98,17 @@
 
 <p>Now, when you visit the Order Summary, you can see that there is a new &quot;Ship&quot; button in the middle of the page.</p>
 
-<p><img src="/images/user/orders/ship_it.jpg" alt="Ship Button"></p>
+<p>The only thing that remains to do now is to click the &quot;Edit&quot; icon next to the tracking details line, and provide tracking info for the package(s). Click the &quot;Save&quot; icon to record this information.</p>
+
+<p><img src="/solidus-guides/assets/img/users/orders/tracking_input.png" alt="Input Tracking Info"></p>
+
+<p>Note that you must enter the tracking information before clicking &quot;SHIP&quot;.</p>
+
+<p><img src="/solidus-guides/assets/img/users/orders/ship_it.png" alt="Ship Button"></p>
 
 <p>Clicking this button moves the Shipment State from &quot;Ready&quot; to &quot;Shipped&quot;.</p>
 
-<p><img src="/images/user/orders/order_shipped.jpg" alt="Order Marked Shipped"></p>
-
-<p>The only thing that remains to do now is to click the &quot;Edit&quot; icon next to the tracking details line, and provide tracking info for the package(s). Click the &quot;Save&quot; icon to record this information.</p>
-
-<p><img src="/images/user/orders/tracking_input.jpg" alt="Input Tracking Info"></p>
+<p><img src="/solidus-guides/assets/img/users/orders/order_shipped.png" alt="Order Marked Shipped"></p>
 
         </section>
 
@@ -133,104 +137,6 @@
   
   
     <li class="">
-      <a href="/solidus-guides/users/overview/"
-        title="Overview">Overview</a>
-      
-      
-
-      
-    </li>
-  
-    <li class="">
-      <a href="/solidus-guides/users/configuration/"
-        title="Configuration">Configuration</a>
-      
-      
-
-<button class="expand-subnav"
-        aria-expanded="false"
-        aria-controls="nav-collapsible-2">+</button>
-<ul class="nav-children" id="nav-collapsible-2"
-    aria-hidden="true">
-  
-  
-    <li class="">
-      <a href="/solidus-guides/users/configuration/configuring_analytics/"
-        title="Configuring Analytics">Configuring Analytics</a>
-      
-      
-
-      
-    </li>
-  
-    <li class="">
-      <a href="/solidus-guides/users/configuration/configuring_general_settings/"
-        title="Configuring Settings">Configuring Settings</a>
-      
-      
-
-      
-    </li>
-  
-    <li class="">
-      <a href="/solidus-guides/users/configuration/configuring_geography/"
-        title="Configuring Geography">Configuring Geography</a>
-      
-      
-
-      
-    </li>
-  
-    <li class="">
-      <a href="/solidus-guides/users/configuration/configuring_inventory/"
-        title="Configuring Inventory">Configuring Inventory</a>
-      
-      
-
-      
-    </li>
-  
-    <li class="">
-      <a href="/solidus-guides/users/configuration/configuring_mail_ethods/"
-        title="Configuring Mail Methods">Configuring Mail Methods</a>
-      
-      
-
-      
-    </li>
-  
-    <li class="">
-      <a href="/solidus-guides/users/configuration/configuring_shipping/"
-        title="Configuring Shipping">Configuring Shipping</a>
-      
-      
-
-      
-    </li>
-  
-    <li class="">
-      <a href="/solidus-guides/users/configuration/configuring_taxes/"
-        title="Configuring Taxes">Configuring Taxes</a>
-      
-      
-
-      
-    </li>
-  
-    <li class="">
-      <a href="/solidus-guides/users/configuration/configuring_taxonomies/"
-        title="Configuring Taxonomies">Configuring Taxonomies</a>
-      
-      
-
-      
-    </li>
-</ul>
-
-      
-    </li>
-  
-    <li class="">
       <a href="/solidus-guides/users/orders/"
         title="Orders">Orders</a>
       
@@ -238,8 +144,8 @@
 
 <button class="expand-subnav"
         aria-expanded="true"
-        aria-controls="nav-collapsible-3">+</button>
-<ul class="nav-children" id="nav-collapsible-3"
+        aria-controls="nav-collapsible-1">+</button>
+<ul class="nav-children" id="nav-collapsible-1"
     aria-hidden="false">
   
   
@@ -253,7 +159,7 @@
     </li>
   
     <li class="">
-      <a href="/solidus-guides/users/orders/enter_orders/"
+      <a href="/solidus-guides/users/orders/entering_orders/"
         title="Entering Orders">Entering Orders</a>
       
       
@@ -309,8 +215,8 @@
 
 <button class="expand-subnav"
         aria-expanded="false"
-        aria-controls="nav-collapsible-4">+</button>
-<ul class="nav-children" id="nav-collapsible-4"
+        aria-controls="nav-collapsible-2">+</button>
+<ul class="nav-children" id="nav-collapsible-2"
     aria-hidden="true">
   
   
@@ -344,8 +250,8 @@
 
 <button class="expand-subnav"
         aria-expanded="false"
-        aria-controls="nav-collapsible-5">+</button>
-<ul class="nav-children" id="nav-collapsible-5"
+        aria-controls="nav-collapsible-3">+</button>
+<ul class="nav-children" id="nav-collapsible-3"
     aria-hidden="true">
   
   
@@ -433,14 +339,14 @@
 
 <button class="expand-subnav"
         aria-expanded="false"
-        aria-controls="nav-collapsible-6">+</button>
-<ul class="nav-children" id="nav-collapsible-6"
+        aria-controls="nav-collapsible-4">+</button>
+<ul class="nav-children" id="nav-collapsible-4"
     aria-hidden="true">
   
   
     <li class="">
-      <a href="/solidus-guides/users/shipments/calculations/"
-        title="Calculations">Calculations</a>
+      <a href="/solidus-guides/users/shipments/calculators/"
+        title="Calculators">Calculators</a>
       
       
 
@@ -479,15 +385,6 @@
     </li>
   
     <li class="">
-      <a href="/solidus-guides/users/extensions/"
-        title="Extensions">Extensions</a>
-      
-      
-
-      
-    </li>
-  
-    <li class="">
       <a href="/solidus-guides/users/promotions/"
         title="Promotions">Promotions</a>
       
@@ -501,6 +398,86 @@
         title="Reports">Reports</a>
       
       
+
+      
+    </li>
+  
+    <li class="">
+      <a href="/solidus-guides/users/configuration/"
+        title="Configuration">Configuration</a>
+      
+      
+
+<button class="expand-subnav"
+        aria-expanded="false"
+        aria-controls="nav-collapsible-7">+</button>
+<ul class="nav-children" id="nav-collapsible-7"
+    aria-hidden="true">
+  
+  
+    <li class="">
+      <a href="/solidus-guides/users/configuration/configuring_analytics/"
+        title="Configuring Analytics">Configuring Analytics</a>
+      
+      
+
+      
+    </li>
+  
+    <li class="">
+      <a href="/solidus-guides/users/configuration/configuring_general_settings/"
+        title="Configuring Settings">Configuring Settings</a>
+      
+      
+
+      
+    </li>
+  
+    <li class="">
+      <a href="/solidus-guides/users/configuration/configuring_geography/"
+        title="Configuring Geography">Configuring Geography</a>
+      
+      
+
+      
+    </li>
+  
+    <li class="">
+      <a href="/solidus-guides/users/configuration/configuring_inventory/"
+        title="Configuring Inventory">Configuring Inventory</a>
+      
+      
+
+      
+    </li>
+  
+    <li class="">
+      <a href="/solidus-guides/users/configuration/configuring_shipping/"
+        title="Configuring Shipping">Configuring Shipping</a>
+      
+      
+
+      
+    </li>
+  
+    <li class="">
+      <a href="/solidus-guides/users/configuration/configuring_taxes/"
+        title="Configuring Taxes">Configuring Taxes</a>
+      
+      
+
+      
+    </li>
+  
+    <li class="">
+      <a href="/solidus-guides/users/configuration/configuring_taxonomies/"
+        title="Configuring Taxonomies">Configuring Taxonomies</a>
+      
+      
+
+      
+    </li>
+</ul>
 
       
     </li>
