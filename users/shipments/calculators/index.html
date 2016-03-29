@@ -7,12 +7,6 @@
   <title>Calculators - Solidus Guides</title>
   <meta name="viewport" content="width=device-width">
   <link rel="shortcut icon" type="image/ico" href="/solidus-guides/assets/favicons/favicon.ico" />
-  <link rel="icon" type="image/png" href="/solidus-guides/assets/favicons/favicon.png" />
-  <link rel="apple-touch-icon-precomposed" href="/solidus-guides/assets/favicons/18f-center-57.png" />
-  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/solidus-guides/assets/favicons/18f-center-72.png" />
-  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/solidus-guides/assets/favicons/18f-center-114.png" />
-  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/solidus-guides/assets/favicons/18f-center-144.png"/>
-  <link rel="icon" type="image/png" sizes="192x192" href="/solidus-guides/assets/favicons/18f-center-192.png" />
   <link href='https://fonts.googleapis.com/css?family=Raleway:400,700%7COpen+Sans:400,400italic,600' rel='stylesheet' type='text/css' />
   <link rel="stylesheet" href="/solidus-guides/assets/css/styles.css" type='text/css' />
   <!--[if lt IE 9]>
@@ -57,7 +51,7 @@
 
         <section id="main" class="main-content" role="main">
           <h2>Calculators</h2>
-          <h2>Calculators</h2>
+          <h2 id="calculators">Calculators</h2>
 
 <p>A Calculator is the component of the Solidus shipping system responsible for calculating the shipping price for each available <a href="shipping_methods">Shipping Method</a>.</p>
 
@@ -71,65 +65,71 @@
 <li><a href="#price-sack">Price sack</a></li>
 </ul>
 
-<h3>Flat Rate (per order)</h3>
+<h3 id="flat-rate-per-order">Flat Rate (per order)</h3>
 
 <p>The Flat Rate (per order) calculator allows you to charge the same shipping price per order regardless of the number of items in the order. You define the flat rate charged per order at the shipping method level.</p>
 
 <p>For example, if you have two shipping methods defined for your store (&quot;UPS 1-Day&quot; and &quot;UPS 2-Day&quot;), and have selected &quot;Flat rate&quot; as the calculator type for each, you could charge a $15 flat rate shipping cost for the UPS 1-Day orders and a $10 flat rate shipping cost for the UPS 2-Day orders.</p>
 
-<h3>Flat Rate (per item)</h3>
+<h3 id="flat-rate-per-item">Flat Rate (per item)</h3>
 
 <p>The Flat Rate (per item/product) calculator allows you to determine the shipping costs based on the number of items in the order.</p>
 
 <p>For example, if there are 4 items in an order and the flat rate per item amount is set to $10 then the total shipping costs for the order would be $40.</p>
 
-<h3>Flat Percent</h3>
+<h3 id="flat-percent">Flat Percent</h3>
 
 <p>The Flat Percent calculator allows you to calculate shipping costs as a percent of the total amount charged for the order. The amount is calculated as follows:</p>
-<div class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="p">[</span><span class="n">item</span> <span class="n">total</span><span class="p">]</span> <span class="n">x</span> <span class="p">[</span><span class="n">flat</span> <span class="n">percentage</span><span class="p">]</span><span class="sb">```
+<div class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="p">[</span><span class="n">item</span> <span class="n">total</span><span class="p">]</span> <span class="n">x</span> <span class="p">[</span><span class="n">flat</span> <span class="n">percentage</span><span class="p">]</span>
+</code></pre></div>
+<p>For example, if an order had an item total of $31 and the calculator was configured to have a flat percent amount of 10, the shipping cost would be $3.10, because $31 x 10% = $3.10.</p>
 
-For example, if an order had an item total of $31 and the calculator was configured to have a flat percent amount of 10, the shipping cost would be $3.10, because $31 x 10% = $3.10.
+<h3 id="flexible-rate">Flexible Rate</h3>
 
-### Flexible Rate
+<p>The Flexible Rate calculator is typically used for promotional discounts when you want to give a specific discount for the first product, and then subsequent discounts for other products, up to a certain amount.</p>
 
-The Flexible Rate calculator is typically used for promotional discounts when you want to give a specific discount for the first product, and then subsequent discounts for other products, up to a certain amount.
+<p>The Flexible Rate calculator takes four inputs:</p>
 
-The Flexible Rate calculator takes four inputs:
+<ul>
+<li>First Item Cost: the amount of shipping charged for the first item in the order.</li>
+<li>Additional Item Cost: the amount of shipping charged for items beyond the first item.</li>
+<li>Max Items: the maximum number of items on which shipping will be calculated.</li>
+<li>Currency: defaults to the currency you have configured for your store.</li>
+</ul>
 
-* First Item Cost: the amount of shipping charged for the first item in the order.
-* Additional Item Cost: the amount of shipping charged for items beyond the first item.
-* Max Items: the maximum number of items on which shipping will be calculated.
-* Currency: defaults to the currency you have configured for your store.
+<p>For example, if you set First Item Cost to $10, Additional Item Cost to $5, and Max Items to 4, you could be charging $10 for the first item, $5 for the next 3 items, and $0 for items beyond the first 4. Thus, an order with 1 item would have a shipping cost of $10. An order with two items would cost $15 to ship, and an order of 7 items would cost $25 to ship.</p>
 
-For example, if you set First Item Cost to $10, Additional Item Cost to $5, and Max Items to 4, you could be charging $10 for the first item, $5 for the next 3 items, and $0 for items beyond the first 4. Thus, an order with 1 item would have a shipping cost of $10. An order with two items would cost $15 to ship, and an order of 7 items would cost $25 to ship.
+<h3 id="price-sack">Price Sack</h3>
 
-### Price Sack
+<p>The Price Sack calculator is a way to offer discount shipping to orders over a certain dollar amount. The Price Sack calculator takes four inputs:</p>
 
-The Price Sack calculator is a way to offer discount shipping to orders over a certain dollar amount. The Price Sack calculator takes four inputs:
+<ul>
+<li>Minimal Amount</li>
+<li>Normal Amount</li>
+<li>Discount Amount</li>
+<li>Currency (defaults to the currency you have configured for your store)</li>
+</ul>
 
-* Minimal Amount
-* Normal Amount
-* Discount Amount
-* Currency (defaults to the currency you have configured for your store)
+<p>Any order whose subtotal is under is less than what you set for Minimal Amount would be charged a shipping cost of Normal Amount. Orders whose subtotals are equal to or greater than the Minimal Amount would be charged the Discount Amount.</p>
 
-Any order whose subtotal is under is less than what you set for Minimal Amount would be charged a shipping cost of Normal Amount. Orders whose subtotals are equal to or greater than the Minimal Amount would be charged the Discount Amount.
+<p>For example, suppose you create a shipping calculator with these settings:</p>
 
-For example, suppose you create a shipping calculator with these settings:
+<ul>
+<li>Minimal Amount - $50</li>
+<li>Normal Amount - $15</li>
+<li>Discount Amount - $5</li>
+</ul>
 
-* Minimal Amount - $50
-* Normal Amount - $15
-* Discount Amount - $5
+<p>A customer whose order subtotal equals $35 would be offered a shipping cost of $15 using this shipping method. A different customer whose order subtotal equals $55 would be offered a shipping cost of only $5.</p>
 
-A customer whose order subtotal equals $35 would be offered a shipping cost of $15 using this shipping method. A different customer whose order subtotal equals $55 would be offered a shipping cost of only $5.
+<h3 id="custom-calculators">Custom Calculators</h3>
 
-### Custom Calculators
+<p>You can define your own calculator if you have more complex needs. In that case, check out the <a href="../developer/calculators.html">Calculators Guide</a>.</p>
 
-You can define your own calculator if you have more complex needs. In that case, check out the [Calculators Guide](../developer/calculators.html).
+<h2 id="next-step">Next Step</h2>
 
-## Next Step
+<p>If you have followed this guide series <a href="../../shipments">from the beginning</a>, your store is now stocked with <a href="../shipping_categories">shipping categories</a>, <a href="../zones">geographical shipping zones</a>, and calculators. The final step is to pull it all together into <a href="../shipping_methods">shipping methods</a>, from which your customers can choose at checkout.</p>
 
-If you have followed this guide series [from the beginning](shipments), your store is now stocked with [shipping categories](shipping_categories), [geographical shipping zones](zones), and calculators. The final step is to pull it all together into [shipping methods](shipping_methods), from which your customers can choose at checkout.
-</span></code></pre></div>
         </section>
 
         <aside>
@@ -405,6 +405,15 @@ If you have followed this guide series [from the beginning](shipments), your sto
     </li>
   
     <li class="">
+      <a href="/solidus-guides/users/stock/"
+        title="Stock">Stock</a>
+      
+      
+
+      
+    </li>
+  
+    <li class="">
       <a href="/solidus-guides/users/promotions/"
         title="Promotions">Promotions</a>
       
@@ -430,8 +439,8 @@ If you have followed this guide series [from the beginning](shipments), your sto
 
 <button class="expand-subnav"
         aria-expanded="false"
-        aria-controls="nav-collapsible-7">+</button>
-<ul class="nav-children" id="nav-collapsible-7"
+        aria-controls="nav-collapsible-8">+</button>
+<ul class="nav-children" id="nav-collapsible-8"
     aria-hidden="true">
   
   

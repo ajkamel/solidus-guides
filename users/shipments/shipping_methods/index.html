@@ -7,12 +7,6 @@
   <title>Shipping Methods - Solidus Guides</title>
   <meta name="viewport" content="width=device-width">
   <link rel="shortcut icon" type="image/ico" href="/solidus-guides/assets/favicons/favicon.ico" />
-  <link rel="icon" type="image/png" href="/solidus-guides/assets/favicons/favicon.png" />
-  <link rel="apple-touch-icon-precomposed" href="/solidus-guides/assets/favicons/18f-center-57.png" />
-  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/solidus-guides/assets/favicons/18f-center-72.png" />
-  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/solidus-guides/assets/favicons/18f-center-114.png" />
-  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/solidus-guides/assets/favicons/18f-center-144.png"/>
-  <link rel="icon" type="image/png" sizes="192x192" href="/solidus-guides/assets/favicons/18f-center-192.png" />
   <link href='https://fonts.googleapis.com/css?family=Raleway:400,700%7COpen+Sans:400,400italic,600' rel='stylesheet' type='text/css' />
   <link rel="stylesheet" href="/solidus-guides/assets/css/styles.css" type='text/css' />
   <!--[if lt IE 9]>
@@ -57,17 +51,17 @@
 
         <section id="main" class="main-content" role="main">
           <h2>Shipping Methods</h2>
-          <h2>Shipping Methods</h2>
+          <h2 id="shipping-methods">Shipping Methods</h2>
 
 <p>Now that you have set up all of the pieces you need, it&#39;s time to put them together into the shipping options that the customer sees when they reach checkout. These options are called Shipping Methods - they are the carriers and services used to send your products.</p>
 
-<h3>Adding a Shipping Method</h3>
+<h3 id="adding-a-shipping-method">Adding a Shipping Method</h3>
 
 <p>To add a new shipping method to your store, go to the Admin Interface and click &quot;Configuration&quot;, then &quot;Shipping Methods&quot;. Click the &quot;New Shipping Method&quot; button to open the New Shipping Method form.</p>
 
-<p><img src="/images/user/shipments/new_shipping_method.jpg" alt="New Shipping Method"></p>
+<p><img src="/solidus-guides/assets/img/users/shipments/new_shipping_method.jpg" alt="New Shipping Method"></p>
 
-<h4>Name</h4>
+<h4 id="name">Name</h4>
 
 <p>Enter a name for the shipping method. This is the exact wording that the customer will see at checkout. This should include both the carrier (USPS, UPS, Fedex, DHL, etc.) as well as the service type (First Class Mail, Overnight, Ground, etc.) So it would be very common to need several shipping methods for your store, for example:</p>
 
@@ -83,7 +77,7 @@
 
 <p>Remember that you will need to associate one or more <a href="#zones">zones</a> with each shipping method in order for it to appear as an option at checkout.</p>
 
-<h4>Display</h4>
+<h4 id="display">Display</h4>
 
 <p>From the &quot;Display&quot; drop-down box, choose whether you want to have the option display only on the backend, the frontend, or both.</p>
 
@@ -97,9 +91,9 @@
 <li>Yours is a photography studio. You usually sell prints that physical delivery, but for some clients you are willing to send electronic media that they can print themselves.</li>
 </ul>
 
-<h4>Tracking URL</h4>
+<h4 id="tracking-url">Tracking URL</h4>
 
-<p>You can optionally input a tracking URL for your new shipping method. This allows customers to track the progress of their package from your <a href="stock_locations">Stock Location</a> to the order&#39;s shipping address. The string &quot;:tracking&quot; will be replaced with the tracking number you input once you actually process the order.</p>
+<p>You can optionally input a tracking URL for your new shipping method. This allows customers to track the progress of their package from your <a href="/solidus-guides/users/stock/stock_locations">Stock Location</a> to the order&#39;s shipping address. The string &quot;:tracking&quot; will be replaced with the tracking number you input once you actually process the order.</p>
 
 <p>You may need to check with the shipping carrier to see if they have a Shipping Confirmation URL that customers can use for this service. Some <a href="http://verysimple.com/2011/07/06/ups-tracking-url/">commonly-used tracking URLs</a> are available online.</p>
 
@@ -107,47 +101,47 @@
 Please note that Solidus Commerce, Inc. makes no claims of warranty or accuracy for the information presented on third-party websites. We strongly urge you to verify the information independently before you put it into production on your store.
 !!!</p>
 
-<h4>Categories</h4>
+<h4 id="categories">Categories</h4>
 
 <p>Some shipping methods may only apply to certain types of products in your store, regardless of where those items are being shipped. You may only want to send over-sized items via UPS Ground, for example, and not via USPS Priority. The options shown in the &quot;Categories&quot; section correspond to the <a href="shipping_categories">Shipping Categories</a> you set up in an earlier section of this guide series.</p>
 
-<p><img src="/images/user/shipments/shipping_method_categories.jpg" alt="Shipping Method Categories"></p>
+<p><img src="/solidus-guides/assets/img/users/shipments/shipping_method_categories.jpg" alt="Shipping Method Categories"></p>
 
 <p>Check the boxes next to the categories you want served by your new shipping method.</p>
 
-<h4>Zones</h4>
+<h4 id="zones">Zones</h4>
 
-<p>In <a href="zones">a previous step to this guide</a> you learned about how to set up geographical zones for your store. Within the form&#39;s &quot;Zones&quot; section, you need to specify which zones are served by this shipping method. The &quot;EU<em>VAT&quot; (European Value-Added Tax) zone could be served by USPS First Class International, but could _not</em> be served by USPS Priority Mail.</p>
+<p>In <a href="../zones">a previous step to this guide</a> you learned about how to set up geographical zones for your store. Within the form&#39;s &quot;Zones&quot; section, you need to specify which zones are served by this shipping method. The &quot;EU_VAT&quot; (European Value-Added Tax) zone could be served by USPS First Class International, but could <em>not</em> be served by USPS Priority Mail.</p>
 
-<p><img src="/images/user/shipments/shipping_method_zones.jpg" alt="Shipping Method Zones"></p>
+<p><img src="/solidus-guides/assets/img/users/shipments/shipping_method_zones.jpg" alt="Shipping Method Zones"></p>
 
 <p>Check the boxes next to any zones you want served by this shipping method.</p>
 
-<h4>Calculator</h4>
+<h4 id="calculator">Calculator</h4>
 
-<p>Each shipping method is associated with one <a href="calculators">Calculator</a>. You can choose one of the built-in Solidus calculators, or one you made yourself.</p>
+<p>Each shipping method is associated with one <a href="../calculators">Calculator</a>. You can choose one of the built-in Solidus calculators, or one you made yourself.</p>
 
-<p><img src="/images/user/shipments/shipping_method_calculator.jpg" alt="Shipping Method Calculator"></p>
+<p><img src="/solidus-guides/assets/img/users/shipments/shipping_method_calculator.jpg" alt="Shipping Method Calculator"></p>
 
 <p>Once you&#39;ve made your calculator selection, click the &quot;Create&quot; button to finalize your new shipping method. The screen will refresh with one or more fields you&#39;ll use to set the parameters of your calculator. For example, creating a shipping method with a flat percent calculator will produce a screen like this:</p>
 
-<p><img src="/images/user/shipments/shipping_method_flat_percent.jpg" alt="Shipping Method Flat Percent"></p>
+<p><img src="/solidus-guides/assets/img/users/shipments/shipping_method_flat_percent.jpg" alt="Shipping Method Flat Percent"></p>
 
 <p>If necessary, you can re-read the <a href="calculators">Calculators</a> portion of this guide series to better understand the options. Click the &quot;Update&quot; button, and your shipping method is now complete!</p>
 
-<h3>Editing a Shipping Method</h3>
+<h3 id="editing-a-shipping-method">Editing a Shipping Method</h3>
 
 <p>To edit an existing method, go to the Admin Interface and click &quot;Configuration&quot;, then &quot;Shipping Methods&quot;. Click the &quot;Edit&quot; icon next to any of the shipping methods in the list.</p>
 
-<p><img src="/images/user/shipments/edit_shipping_method.jpg" alt="Edit Shipping Method"></p>
+<p><img src="/solidus-guides/assets/img/users/shipments/edit_shipping_method.jpg" alt="Edit Shipping Method"></p>
 
 <p>The form and all options that come up are the same as those you used in creating your shipping methods.</p>
 
-<h3>Deleting a Shipping Method</h3>
+<h3 id="deleting-a-shipping-method">Deleting a Shipping Method</h3>
 
 <p>To delete a shipping method, go to the Admin Interface and click &quot;Configuration&quot;, then &quot;Shipping Methods&quot;. Click the &quot;Delete&quot; icon next to any of the shipping methods in the list.</p>
 
-<p><img src="/images/user/shipments/delete_shipping_method.jpg" alt="Delete Shipping Method"></p>
+<p><img src="/solidus-guides/assets/img/users/shipments/delete_shipping_method.jpg" alt="Delete Shipping Method"></p>
 
 <p>Confirm that you want to delete the shipping method by clicking &quot;OK&quot;.</p>
 
@@ -426,6 +420,15 @@ Please note that Solidus Commerce, Inc. makes no claims of warranty or accuracy 
     </li>
   
     <li class="">
+      <a href="/solidus-guides/users/stock/"
+        title="Stock">Stock</a>
+      
+      
+
+      
+    </li>
+  
+    <li class="">
       <a href="/solidus-guides/users/promotions/"
         title="Promotions">Promotions</a>
       
@@ -451,8 +454,8 @@ Please note that Solidus Commerce, Inc. makes no claims of warranty or accuracy 
 
 <button class="expand-subnav"
         aria-expanded="false"
-        aria-controls="nav-collapsible-7">+</button>
-<ul class="nav-children" id="nav-collapsible-7"
+        aria-controls="nav-collapsible-8">+</button>
+<ul class="nav-children" id="nav-collapsible-8"
     aria-hidden="true">
   
   

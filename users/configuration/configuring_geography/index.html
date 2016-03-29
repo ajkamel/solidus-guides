@@ -7,12 +7,6 @@
   <title>Zones, Countries, and States - Solidus Guides</title>
   <meta name="viewport" content="width=device-width">
   <link rel="shortcut icon" type="image/ico" href="/solidus-guides/assets/favicons/favicon.ico" />
-  <link rel="icon" type="image/png" href="/solidus-guides/assets/favicons/favicon.png" />
-  <link rel="apple-touch-icon-precomposed" href="/solidus-guides/assets/favicons/18f-center-57.png" />
-  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/solidus-guides/assets/favicons/18f-center-72.png" />
-  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/solidus-guides/assets/favicons/18f-center-114.png" />
-  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/solidus-guides/assets/favicons/18f-center-144.png"/>
-  <link rel="icon" type="image/png" sizes="192x192" href="/solidus-guides/assets/favicons/18f-center-192.png" />
   <link href='https://fonts.googleapis.com/css?family=Raleway:400,700%7COpen+Sans:400,400italic,600' rel='stylesheet' type='text/css' />
   <link rel="stylesheet" href="/solidus-guides/assets/css/styles.css" type='text/css' />
   <!--[if lt IE 9]>
@@ -57,7 +51,7 @@
 
         <section id="main" class="main-content" role="main">
           <h2>Zones, Countries, and States</h2>
-          <h2>Introduction</h2>
+          <h2 id="introduction">Introduction</h2>
 
 <p>Your Solidus store allows you to make decisions about which parts of the world you will sell products to, and how those areas are grouped into geographical regions for the convenience of setting <a href="shipments">shipping</a> and <a href="taxation">taxation</a> policies. This is accomplished through the use of:</p>
 
@@ -67,69 +61,69 @@
 <li><a href="#states">states</a></li>
 </ul>
 
-<h3>Zones</h3>
+<h3 id="zones">Zones</h3>
 
-<p>Within a Solidus store, zones are geographical groupings - collections of either states or countries. You can read all about zones in the <a href="zones">zones guide</a>, including how to <a href="#zones#creating-a-zone">create zones</a>, how to <a href="zones#adding-members-to-a-zone">add members to a zone</a>, and how to <a href="zones#removing-members-from-a-zone">remove members from a zone</a>.</p>
+<p>Within a Solidus store, zones are geographical groupings - collections of either states or countries. You can read all about zones in the <a href="../../shipments/zones">zones guide</a>, including how to <a href="#zones#creating-a-zone">create zones</a>, how to <a href="../../shipments/zones#adding-members-to-a-zone">add members to a zone</a>, and how to <a href="../../shipments/zones#removing-members-from-a-zone">remove members from a zone</a>.</p>
 
-<h3>Countries</h3>
+<h3 id="countries">Countries</h3>
 
 <p>If you pre-loaded the seed data into your Solidus store, then you already have several countries configured. You may want to edit items in this list based on your needs. To access the Countries list, go to your Admin Interface, click &quot;Configuration&quot;, then click &quot;Countries&quot;.</p>
 
-<p><img src="/images/user/config/countries.jpg" alt="Countries List"></p>
+<p><img src="/solidus-guides/assets/img/users/config/countries.jpg" alt="Countries List"></p>
 
-<h4>Editing a Country</h4>
+<h4 id="editing-a-country">Editing a Country</h4>
 
-<p><img src="/images/user/config/edit_country_icon.jpg" alt="Edit Country Icon"></p>
+<p><img src="/solidus-guides/assets/img/users/config/edit_country_icon.jpg" alt="Edit Country Icon"></p>
 
 <p>To edit a country, click the &quot;Edit&quot; icon next to the country.</p>
 
-<p><img src="/images/user/config/editing_country.jpg" alt="Editing Country Form"></p>
+<p><img src="/solidus-guides/assets/img/users/config/editing_country.jpg" alt="Editing Country Form"></p>
 
 <p>On this page, you can input the country&#39;s name, its <a href="https://www.iso.org/obp/ui/#search">ISO Name</a>, and whether or not a state name is required at the time of checkout for orders either billed to or shipped to an address in this country. Click &quot;Update&quot; to save any changes.</p>
 
-<h3>States</h3>
+<h3 id="states">States</h3>
 
 <p>A Solidus store pre-loaded with seed data already has all of the states in the US configured for it.</p>
 
-<p><img src="/images/user/config/us_states_list.jpg" alt="US States"></p>
+<p><img src="/solidus-guides/assets/img/users/config/us_states_list.jpg" alt="US States"></p>
 
 <p>You can edit, remove, or add states to your store to suit your needs.</p>
 
-<h4>Editing a State</h4>
+<h4 id="editing-a-state">Editing a State</h4>
 
 <p>To edit an existing store, click the &quot;Edit&quot; icon next to its name in the list.</p>
 
-<p><img src="/images/user/config/edit_state_icon.jpg" alt="Edit State Icon"></p>
+<p><img src="/solidus-guides/assets/img/users/config/edit_state_icon.jpg" alt="Edit State Icon"></p>
 
 <p>You can change the name and abbreviation for the state. Click &quot;Update&quot; to save your changes.</p>
 
-<p><img src="/images/user/config/editing_state.jpg" alt="Editing State"></p>
+<p><img src="/solidus-guides/assets/img/users/config/editing_state.jpg" alt="Editing State"></p>
 
-<h4>Removing a State</h4>
+<h4 id="removing-a-state">Removing a State</h4>
 
 <p>To remove a state from your store, click the &quot;Delete&quot; icon next to its name in the list.</p>
 
-<p><img src="/images/user/config/edit_state_icon.jpg" alt="Deleting State Icon"></p>
+<p><img src="/solidus-guides/assets/img/users/config/edit_state_icon.jpg" alt="Deleting State Icon"></p>
 
 <p>Click &quot;OK&quot; to confirm the deletion.</p>
 
-<h4>Adding a State</h4>
+<h4 id="adding-a-state">Adding a State</h4>
 
 <p>To add a state to your store, first select the country the state belongs to from the &quot;Country&quot; drop-down list.</p>
 
-<p><img src="/images/user/config/countries_drop_down.jpg" alt="Select a Country From the List"></p>
+<p><img src="/solidus-guides/assets/img/users/config/countries_drop_down.jpg" alt="Select a Country From the List"></p>
 
 <p>Next, click the &quot;New State&quot; button. A data entry form appears. Enter the name and abbreviation for the new state, and click &quot;Create&quot;.</p>
 
-<p><img src="/images/user/config/new_state_form.jpg" alt="New State Form"></p>
+<p><img src="/solidus-guides/assets/img/users/config/new_state_form.jpg" alt="New State Form"></p>
 
 <p>The new state is created, and you can now edit or delete it like the other states.</p>
 
-<p><img src="/images/user/config/state_added.jpg" alt="State Added to List"></p>
+<p><img src="/solidus-guides/assets/img/users/config/state_added.jpg" alt="State Added to List"></p>
 
 <hr>
 
-<p>Don&#39;t forget to add new states and countries to your store&#39;s <a href="zones">zones</a>, so the system can accurately calculate tax and shipping options.</p>
+<p>Don&#39;t forget to add new states and countries to your store&#39;s <a href="../../shipments/zones">zones</a>, so the system can accurately calculate tax and shipping options.</p>
 
 <hr>
 
@@ -408,6 +402,15 @@
     </li>
   
     <li class="">
+      <a href="/solidus-guides/users/stock/"
+        title="Stock">Stock</a>
+      
+      
+
+      
+    </li>
+  
+    <li class="">
       <a href="/solidus-guides/users/promotions/"
         title="Promotions">Promotions</a>
       
@@ -433,8 +436,8 @@
 
 <button class="expand-subnav"
         aria-expanded="true"
-        aria-controls="nav-collapsible-7">+</button>
-<ul class="nav-children" id="nav-collapsible-7"
+        aria-controls="nav-collapsible-8">+</button>
+<ul class="nav-children" id="nav-collapsible-8"
     aria-hidden="false">
   
   

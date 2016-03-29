@@ -7,12 +7,6 @@
   <title>Taxonomies - Solidus Guides</title>
   <meta name="viewport" content="width=device-width">
   <link rel="shortcut icon" type="image/ico" href="/solidus-guides/assets/favicons/favicon.ico" />
-  <link rel="icon" type="image/png" href="/solidus-guides/assets/favicons/favicon.png" />
-  <link rel="apple-touch-icon-precomposed" href="/solidus-guides/assets/favicons/18f-center-57.png" />
-  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/solidus-guides/assets/favicons/18f-center-72.png" />
-  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/solidus-guides/assets/favicons/18f-center-114.png" />
-  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/solidus-guides/assets/favicons/18f-center-144.png"/>
-  <link rel="icon" type="image/png" sizes="192x192" href="/solidus-guides/assets/favicons/18f-center-192.png" />
   <link href='https://fonts.googleapis.com/css?family=Raleway:400,700%7COpen+Sans:400,400italic,600' rel='stylesheet' type='text/css' />
   <link rel="stylesheet" href="/solidus-guides/assets/css/styles.css" type='text/css' />
   <!--[if lt IE 9]>
@@ -57,61 +51,61 @@
 
         <section id="main" class="main-content" role="main">
           <h2>Taxonomies</h2>
-          <h2>Introduction</h2>
+          <h2 id="introduction">Introduction</h2>
 
 <p>Taxonomies are the Solidus system&#39;s approach to category trees. The heading of a tree is called a <em>Taxonomy</em>. Any child branches are called <em>Taxons</em>. Taxons themselves can have their own branches. So you could have something like the following categories structure:</p>
 
-<p><img src="/images/user/config/taxonomy_tree.jpg" alt="Taxonomy Tree"></p>
+<p><img src="/solidus-guides/assets/img/users/config/taxonomy_tree.jpg" alt="Taxonomy Tree"></p>
 
 <p>In this example, &quot;Categories&quot; is the name of the Taxonomy. It has three child branches - &quot;Luggage&quot;, &quot;Housewares&quot;, and &quot;Clothing&quot;. The last two branches each have three of their own child branches. Thus, &quot;Clothing&quot; is a child taxon to &quot;Categories&quot; and a parent taxon to &quot;Men&#39;s&quot;.</p>
 
 <p>To reach the Taxonomies list, first go to your Admin Interface, then click &quot;Configurations&quot; and &quot;Taxonomies&quot;.</p>
 
-<h3>Create a New Taxonomy</h3>
+<h3 id="create-a-new-taxonomy">Create a New Taxonomy</h3>
 
 <p>To create a new taxonomy, click the &quot;New Taxonomy&quot; button. Enter a name for the taxonomy and click &quot;Create&quot;.</p>
 
-<p><img src="/images/user/config/new_taxonomy.jpg" alt="New Taxonomy"></p>
+<p><img src="/solidus-guides/assets/img/users/config/new_taxonomy.jpg" alt="New Taxonomy"></p>
 
 <p>You can then <a href="#adding-a-taxon-to-a-taxonomy">add child taxons</a> to your new taxonomy.</p>
 
-<h3>Edit a Taxonomy</h3>
+<h3 id="edit-a-taxonomy">Edit a Taxonomy</h3>
 
 <p>To edit an existing taxonomy, click the &quot;Edit&quot; icon next to the name in the Taxonomies list.</p>
 
-<p><img src="/images/user/config/edit_taxonomy_icon.jpg" alt="Edit Taxonomy Icon"></p>
+<p><img src="/solidus-guides/assets/img/users/config/edit_taxonomy_icon.jpg" alt="Edit Taxonomy Icon"></p>
 
 <p>Here, you can change the name of the Taxonomy. You can also <a href="#reorder-a-taxon">reorder the child taxons</a>, <a href="#delete-a-taxon">delete a taxon</a>, <a href="#adding-a-taxon-to-a-taxonomy">add a new taxon</a>, or <a href="#edit-a-taxon">edit a taxon</a>. Make your changes, then click the Update button.</p>
 
-<p><img src="/images/user/config/edit_taxonomy.jpg" alt="Edit Taxonomy"></p>
+<p><img src="/solidus-guides/assets/img/users/config/edit_taxonomy.jpg" alt="Edit Taxonomy"></p>
 
-<h3>Delete a Taxonomy</h3>
+<h3 id="delete-a-taxonomy">Delete a Taxonomy</h3>
 
-<p><img src="/images/user/config/delete_taxonomy_icon.jpg" alt="Delete Taxonomy Icon"></p>
+<p><img src="/solidus-guides/assets/img/users/config/delete_taxonomy_icon.jpg" alt="Delete Taxonomy Icon"></p>
 
 <p>To delete a taxonomy, click the &quot;Delete&quot; icon next to the name in the Taxonomies list. Click &quot;OK&quot; to confirm.</p>
 
-<h3>Adding a Taxon to a Taxonomy</h3>
+<h3 id="adding-a-taxon-to-a-taxonomy">Adding a Taxon to a Taxonomy</h3>
 
 <p>Once you have created a taxonomy, you may want to add child taxons to it. Do do this, right-click the name of the Taxonomy, and click &quot;Add&quot;.</p>
 
-<p><img src="/images/user/config/add_taxon_to_taxonomy.jpg" alt="Add Taxon to Taxonomy"></p>
+<p><img src="/solidus-guides/assets/img/users/config/add_taxon_to_taxonomy.jpg" alt="Add Taxon to Taxonomy"></p>
 
 <p>This will cause a new input field to open up, with &quot;New node&quot; in it. Replace this text with the name of your new taxon, and hit Enter. You&#39;ll now see the child tax in the taxonomy tree.</p>
 
-<p><img src="/images/user/config/new_taxon.jpg" alt="New Taxon"></p>
+<p><img src="/solidus-guides/assets/img/users/config/new_taxon.jpg" alt="New Taxon"></p>
 
 <p>Click &quot;Update&quot; to save your addition.</p>
 
-<h3>Adding a Taxon to Another Taxon</h3>
+<h3 id="adding-a-taxon-to-another-taxon">Adding a Taxon to Another Taxon</h3>
 
 <p>If your site needs sub-trees, just add taxons to other taxons. To do so, right-click the name of what will become the parent taxon, and click Add.</p>
 
-<p><img src="/images/user/config/add_taxon_to_taxon.jpg" alt="Add Taxon to Another Taxon"></p>
+<p><img src="/solidus-guides/assets/img/users/config/add_taxon_to_taxon.jpg" alt="Add Taxon to Another Taxon"></p>
 
 <p>Enter the name of the child taxon and click enter. Repeat this process for any sub-trees you need.</p>
 
-<p><img src="/images/user/config/complex_taxonomy_tree.jpg" alt="Complex Taxonomy Tree"></p>
+<p><img src="/solidus-guides/assets/img/users/config/complex_taxonomy_tree.jpg" alt="Complex Taxonomy Tree"></p>
 
 <p>Remember to save your changes by clicking the &quot;Update&quot; button after you have added any taxons.</p>
 
@@ -121,23 +115,23 @@
 
 <hr>
 
-<h3>Reorder a Taxon</h3>
+<h3 id="reorder-a-taxon">Reorder a Taxon</h3>
 
 <p>Taxons are displayed in the order you add them by default. To reorder them, just drag and drop them to their correct location in the tree.</p>
 
 <p>Let&#39;s assume, for example, that we want the &quot;Children&#39;s&quot; taxon to be listed first, above &quot;Women&#39;s&quot; and &quot;Men&#39;s&quot;. Just drag and drop the taxon to its new location.</p>
 
-<p><img src="/images/user/config/reorder_taxons.jpg" alt="Reordering Taxons"></p>
+<p><img src="/solidus-guides/assets/img/users/config/reorder_taxons.jpg" alt="Reordering Taxons"></p>
 
 <p>You can even drag a parent taxon into the tree of a different parent taxon, merging it into the second taxon&#39;s sub-tree.</p>
 
-<p><img src="/images/user/config/parent_into_parent_taxon_merge.jpg" alt="Parent-to-Parent Taxon Merge"></p>
+<p><img src="/solidus-guides/assets/img/users/config/parent_into_parent_taxon_merge.jpg" alt="Parent-to-Parent Taxon Merge"></p>
 
-<h3>Edit a Taxon</h3>
+<h3 id="edit-a-taxon">Edit a Taxon</h3>
 
 <p>To edit a taxon&#39;s name, just right-click it and click &quot;Edit&quot;.</p>
 
-<p><img src="/images/user/config/edit_taxon.jpg" alt="Edit Taxon Form"></p>
+<p><img src="/solidus-guides/assets/img/users/config/edit_taxon.jpg" alt="Edit Taxon Form"></p>
 
 <p>Here, you can edit several aspects of the taxon:</p>
 
@@ -153,19 +147,19 @@
 
 <p>Remember to click &quot;Update&quot; after you make your changes.</p>
 
-<h3>Delete a Taxon</h3>
+<h3 id="delete-a-taxon">Delete a Taxon</h3>
 
 <p>To delete a taxon, right-click it in the taxonomy tree and click &quot;Remove&quot;.</p>
 
-<p><img src="/images/user/config/remove_taxon.jpg" alt="Remove a Taxon"></p>
+<p><img src="/solidus-guides/assets/img/users/config/remove_taxon.jpg" alt="Remove a Taxon"></p>
 
 <p>Click &quot;OK&quot; to confirm.</p>
 
-<h3>Associating Products with Taxons</h3>
+<h3 id="associating-products-with-taxons">Associating Products with Taxons</h3>
 
 <p>To associate a product with one or more taxons, go to the Admin Interface, and click the &quot;Products&quot; tab. Locate the product you want to edit, and click its &quot;Edit&quot; icon. Select the taxons for the product in the Taxons field.</p>
 
-<p><img src="/images/user/config/add_taxons_to_product.jpg" alt="Add Taxons to a Product"></p>
+<p><img src="/solidus-guides/assets/img/users/config/add_taxons_to_product.jpg" alt="Add Taxons to a Product"></p>
 
         </section>
 
@@ -442,6 +436,15 @@
     </li>
   
     <li class="">
+      <a href="/solidus-guides/users/stock/"
+        title="Stock">Stock</a>
+      
+      
+
+      
+    </li>
+  
+    <li class="">
       <a href="/solidus-guides/users/promotions/"
         title="Promotions">Promotions</a>
       
@@ -467,8 +470,8 @@
 
 <button class="expand-subnav"
         aria-expanded="true"
-        aria-controls="nav-collapsible-7">+</button>
-<ul class="nav-children" id="nav-collapsible-7"
+        aria-controls="nav-collapsible-8">+</button>
+<ul class="nav-children" id="nav-collapsible-8"
     aria-hidden="false">
   
   

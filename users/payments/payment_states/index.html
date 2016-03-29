@@ -7,12 +7,6 @@
   <title>Payment States - Solidus Guides</title>
   <meta name="viewport" content="width=device-width">
   <link rel="shortcut icon" type="image/ico" href="/solidus-guides/assets/favicons/favicon.ico" />
-  <link rel="icon" type="image/png" href="/solidus-guides/assets/favicons/favicon.png" />
-  <link rel="apple-touch-icon-precomposed" href="/solidus-guides/assets/favicons/18f-center-57.png" />
-  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/solidus-guides/assets/favicons/18f-center-72.png" />
-  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/solidus-guides/assets/favicons/18f-center-114.png" />
-  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/solidus-guides/assets/favicons/18f-center-144.png"/>
-  <link rel="icon" type="image/png" sizes="192x192" href="/solidus-guides/assets/favicons/18f-center-192.png" />
   <link href='https://fonts.googleapis.com/css?family=Raleway:400,700%7COpen+Sans:400,400italic,600' rel='stylesheet' type='text/css' />
   <link rel="stylesheet" href="/solidus-guides/assets/css/styles.css" type='text/css' />
   <!--[if lt IE 9]>
@@ -76,21 +70,19 @@
 
 <p>A payment does not necessarily go through each of these states in sequential order as illustrated below:</p>
 
-<p><img src="/images/developer/core/payment_flow.jpg" alt="Payments Flow"></p>
+<p><img src="/solidus-guides/assets/img/users/payments/payment_flow.jpg" alt="Payments Flow"></p>
 
-<p>You can determine the payment state for a particular order by going to the Admin Interface and clicking on the &quot;Orders&quot; tab. Find the order you want to look up and click on it. Then click on the &quot;Payments&quot; link.</p>
+<p>You can determine the payment state for a particular order by going to the Admin Interface and clicking on the &quot;Orders&quot; tab. Find the order you want to look up and there will be a column which specifies it under &quot;Payment State&quot;.</p>
 
-<p><img src="/images/user/payments/payments_look_up.jpg" alt="Payment Look Up"></p>
+<p>You can find the order payment details by clicking on the specific order state url in the &quot;Payment State column&quot;</p>
 
-<p>The details for the payment will appear. The &quot;Payment State&quot; column will display one of the possible payment states listed above.</p>
-
-<p><img src="/images/user/payments/payment_details.jpg" alt="Payment Details"></p>
+<p><img src="/solidus-guides/assets/img/users/payments/payment_details.png" alt="Payment Details"></p>
 
 <h2>Authorize vs Capture</h2>
 
 <p>Authorizing a payment is the process of confirming the availability of funds for a transaction with the purchaser&#39;s credit card company. Capturing a payment is the process of telling the credit card company that you would like to get paid for the transaction amount. Typically, this two step process of first authorizing the payment and then capturing the payment is used by online retailers to delay charging the customer until the product(s) purchased are fulfilled (shipped).</p>
 
-<p>By default, Solidus automatically handles authorizing the payment for a transaction. For capturing payments, we give you the choice of auto-capturing the payment or manually capturing the payment via the Admin Interface. If you like, you can read further <a href="/developer/payments#auto-capturing">documentation about auto-capturing payments</a>.</p>
+<p>By default, Solidus automatically handles authorizing the payment for a transaction. For capturing payments, we give you the choice of auto-capturing the payment or manually capturing the payment via the Admin Interface. If you like, you can read further <a href="/solidus-guides/developer/payments#auto-capturing">documentation about auto-capturing payments</a>.</p>
 
 <p>Note: Not all payment gateways allow for the two step <em>authorize and then capture</em> payment process. If this functionality is required for your store, please confirm with your payment gateway that they can support this process.</p>
 
@@ -98,13 +90,13 @@
 
 <p>To capture a payment using the Admin Interface, click on the &quot;Orders&quot; tab. Find the order you want to look up and click on it. Then click on the &quot;Payments&quot; link. The order details will appear. Click on the &quot;Capture&quot; icon to initiate the capture process.</p>
 
-<p><img src="/images/user/payments/payment_capture.jpg" alt="Capture a Payment"></p>
+<p><img src="/solidus-guides/assets/img/users/payments/payment_capture.png" alt="Capture a Payment"></p>
 
 <h2>Void a Payment</h2>
 
 <p>To void a payment, go to the Admin Interface. click on the &quot;Orders&quot; tab. Find the order you want to look up and click on it. Then click on the &quot;Payments&quot; link. The order details will appear. Click on the &quot;Void&quot; icon to void the transaction.</p>
 
-<p><img src="/images/user/payments/payment_void.jpg" alt="Void a Payment"></p>
+<p><img src="/solidus-guides/assets/img/users/payments/payment_void.png" alt="Void a Payment"></p>
 
         </section>
 

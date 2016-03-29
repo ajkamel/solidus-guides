@@ -7,12 +7,6 @@
   <title>Zones - Solidus Guides</title>
   <meta name="viewport" content="width=device-width">
   <link rel="shortcut icon" type="image/ico" href="/solidus-guides/assets/favicons/favicon.ico" />
-  <link rel="icon" type="image/png" href="/solidus-guides/assets/favicons/favicon.png" />
-  <link rel="apple-touch-icon-precomposed" href="/solidus-guides/assets/favicons/18f-center-57.png" />
-  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/solidus-guides/assets/favicons/18f-center-72.png" />
-  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/solidus-guides/assets/favicons/18f-center-114.png" />
-  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/solidus-guides/assets/favicons/18f-center-144.png"/>
-  <link rel="icon" type="image/png" sizes="192x192" href="/solidus-guides/assets/favicons/18f-center-192.png" />
   <link href='https://fonts.googleapis.com/css?family=Raleway:400,700%7COpen+Sans:400,400italic,600' rel='stylesheet' type='text/css' />
   <link rel="stylesheet" href="/solidus-guides/assets/css/styles.css" type='text/css' />
   <!--[if lt IE 9]>
@@ -57,7 +51,7 @@
 
         <section id="main" class="main-content" role="main">
           <h2>Zones</h2>
-          <h2>Zones</h2>
+          <h2 id="zones">Zones</h2>
 
 <p>Zones serve as a way to define shipping rules for a particular geographic area. A zone is made up of a set of either countries or states. Zones are used within Solidus to define the rules for a <a href="shipping_methods">Shipping Method</a>.</p>
 
@@ -65,31 +59,31 @@
 
 <p>When the customer enters their shipping address during checkout, Solidus uses that information to determine which zone the order is being delivered to, and only presents the shipping methods to the customer that are defined for that zone.</p>
 
-<h3>Creating a Zone</h3>
+<h3 id="creating-a-zone">Creating a Zone</h3>
 
 <p>To create a new zone, go to the Admin Interface, click the &quot;Configuration&quot; tab, click the &quot;Zones&quot; link, and then click the &quot;New Zone&quot; button. Enter a name and description for your new zone. Decide if you want it to be the default zone selected for the purposes of calculating sales tax. Choose whether you want the zone to be country-based or state-based. Click the &quot;Create&quot; button once complete.</p>
 
-<p><img src="/images/user/shipments/new_zone.jpg" alt="New Zone"></p>
+<p><img src="/solidus-guides/assets/img/users/shipments/new_zone.jpg" alt="New Zone"></p>
 
-<h3>Adding Members to a Zone</h3>
+<h3 id="adding-members-to-a-zone">Adding Members to a Zone</h3>
 
 <p>Once you have a zone set up, you can associate either countries or states with it. To do this, go back to the Zones list (from the Admin Interface, click &quot;Configuration&quot;, then &quot;Zones&quot;). Click the &quot;Edit&quot; icon next to the zone you just created. Click the &quot;Add Country&quot; or &quot;Add State&quot; button.</p>
 
-<p><img src="/images/user/shipments/edit_zone.jpg" alt="Edit Zone Form"></p>
+<p><img src="/solidus-guides/assets/img/users/shipments/edit_zone.jpg" alt="Edit Zone Form"></p>
 
 <p>Choose a country or state from the drop-down box and click the &quot;Add Country&quot; or &quot;Add State&quot; button. Follow the same steps to add additional countries or states for the Zone.</p>
 
-<p><img src="/images/user/shipments/add_multi_to_zone.jpg" alt="Add Multiple Members"></p>
+<p><img src="/solidus-guides/assets/img/users/shipments/add_multi_to_zone.jpg" alt="Add Multiple Members"></p>
 
 <p>Click &quot;Update&quot; once complete.</p>
 
-<h3>Removing Members From a Zone</h3>
+<h3 id="removing-members-from-a-zone">Removing Members From a Zone</h3>
 
 <p>It is easy to remove a state or country from one of your zones. Just go to your Admin Interface and click &quot;Configuration&quot;, then &quot;Zones&quot;. Click the &quot;Edit&quot; icon next to the zone you want to change. To remove a member of the zone, just click the X icon below its name.</p>
 
-<p><img src="/images/user/shipments/remove_zone_member.jpg" alt="Remove a Zone Member"></p>
+<p><img src="/solidus-guides/assets/img/users/shipments/remove_zone_member.jpg" alt="Remove a Zone Member"></p>
 
-<h2>Next Step</h2>
+<h2 id="next-step">Next Step</h2>
 
 <p>Once you have set up all of the shipping zones you need, it&#39;s time to move on to the next Solidus shipping component: <a href="calculators">Calculators</a>.</p>
 
@@ -368,6 +362,15 @@
     </li>
   
     <li class="">
+      <a href="/solidus-guides/users/stock/"
+        title="Stock">Stock</a>
+      
+      
+
+      
+    </li>
+  
+    <li class="">
       <a href="/solidus-guides/users/promotions/"
         title="Promotions">Promotions</a>
       
@@ -393,8 +396,8 @@
 
 <button class="expand-subnav"
         aria-expanded="false"
-        aria-controls="nav-collapsible-7">+</button>
-<ul class="nav-children" id="nav-collapsible-7"
+        aria-controls="nav-collapsible-8">+</button>
+<ul class="nav-children" id="nav-collapsible-8"
     aria-hidden="true">
   
   

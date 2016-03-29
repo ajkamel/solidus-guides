@@ -7,12 +7,6 @@
   <title>Prototypes - Solidus Guides</title>
   <meta name="viewport" content="width=device-width">
   <link rel="shortcut icon" type="image/ico" href="/solidus-guides/assets/favicons/favicon.ico" />
-  <link rel="icon" type="image/png" href="/solidus-guides/assets/favicons/favicon.png" />
-  <link rel="apple-touch-icon-precomposed" href="/solidus-guides/assets/favicons/18f-center-57.png" />
-  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/solidus-guides/assets/favicons/18f-center-72.png" />
-  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/solidus-guides/assets/favicons/18f-center-114.png" />
-  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/solidus-guides/assets/favicons/18f-center-144.png"/>
-  <link rel="icon" type="image/png" sizes="192x192" href="/solidus-guides/assets/favicons/18f-center-192.png" />
   <link href='https://fonts.googleapis.com/css?family=Raleway:400,700%7COpen+Sans:400,400italic,600' rel='stylesheet' type='text/css' />
   <link rel="stylesheet" href="/solidus-guides/assets/css/styles.css" type='text/css' />
   <!--[if lt IE 9]>
@@ -57,39 +51,39 @@
 
         <section id="main" class="main-content" role="main">
           <h2>Prototypes</h2>
-          <h2>Introduction</h2>
+          <h2 id="introduction">Introduction</h2>
 
-<p>A Prototype is like a Product blueprint, useful for helping you add a group of similar new products to your store more quickly. The general procedure is that you create a Prototype which is associated with certain <a href="product_options">Option Types</a> and <a href="product_properties">Properties</a>; then you create products based on that Prototype, and only need to fill in the values for those Option Types and Properties.</p>
+<p>A Prototype is like a Product blueprint, useful for helping you add a group of similar new products to your store more quickly. The general procedure is that you create a Prototype which is associated with certain <a href="product_options">Option Types</a> and <a href="../product_properties">Properties</a>; then you create products based on that Prototype, and only need to fill in the values for those Option Types and Properties.</p>
 
 <p>Imagine that you&#39;ve just received a new shipment of picture frames from your supplier. Your new stock encompasses a variety of brands, sizes, colors, and materials, but they are all basically the same type of product. This is a prime use case for prototypes.</p>
 
 <hr>
 
-<p>This guide presumes you have already created the <a href="product_options">Option Types</a> and <a href="product_properties">Properties</a> you need for your new prototype. If you haven&#39;t, you should do that first before proceeding.</p>
+<p>This guide presumes you have already created the <a href="../product_options">Option Types</a> and <a href="../product_properties">Properties</a> you need for your new prototype. If you haven&#39;t, you should do that first before proceeding.</p>
 
 <hr>
 
-<h3>Creating a Prototype</h3>
+<h3 id="creating-a-prototype">Creating a Prototype</h3>
 
 <p>To create a prototype, go to the Admin Interface and click &quot;Products&quot;, then &quot;Prototypes&quot;. Click the &quot;New Prototype&quot; button.</p>
 
-<p><img src="/images/user/products/new_prototype.jpg" alt="New Prototype Form"></p>
+<p><img src="/solidus-guides/assets/img/users/products/new_prototype.jpg" alt="New Prototype Form"></p>
 
 <p>Input a value for the &quot;Name&quot; field (such as &quot;Picture Frames&quot;), and choose the properties and options you want to associate with this type of product.</p>
 
-<p><img src="/images/user/products/picture_frame_prototype.jpg" alt="Filled-In Prototype Form"></p>
+<p><img src="/solidus-guides/assets/img/users/products/picture_frame_prototype.jpg" alt="Filled-In Prototype Form"></p>
 
 <p>Click the &quot;Create&quot; button. You should now see your new prototype in the &quot;Prototypes&quot; list.</p>
 
-<p><img src="/images/user/products/prototypes.jpg" alt="Prototypes List"></p>
+<p><img src="/solidus-guides/assets/img/users/products/prototypes.jpg" alt="Prototypes List"></p>
 
-<h1>Using a Prototype to Create Products</h1>
+<h1 id="using-a-prototype-to-create-products">Using a Prototype to Create Products</h1>
 
 <p>To create a new product based on the new prototype, click &quot;Products&quot; from the Admin Interface, then click the &quot;New Product&quot; button. Select &quot;Picture Frames&quot; from the &quot;Prototypes&quot; drop-down menu.</p>
 
-<p><img src="/images/user/products/product_from_prototype.jpg" alt="Product From Prototype"></p>
+<p><img src="/solidus-guides/assets/img/users/products/product_from_prototype.jpg" alt="Product From Prototype"></p>
 
-<p>When you do so, the Solidus system shows you values for both of the Option Types you entered, so that it can automatically create <a href="creating_products#understanding-variants">Product Variants</a> for you for each of them.</p>
+<p>When you do so, the Solidus system shows you values for both of the Option Types you entered, so that it can automatically create <a href="../creating_products#understanding-variants">Product Variants</a> for you for each of them.</p>
 
 <p>Let&#39;s create the Product and all Variants for the fictional &quot;Hinkledink Picture Frame&quot; product. Input the product&#39;s Name, SKU, a Master Price (remember, you can change this for each variant), and make sure to set the Available On date to today, so it will show up in your store. Check the boxes for the options this particular product has, and click &quot;Create&quot;.</p>
 
@@ -99,9 +93,9 @@
 
 <hr>
 
-<p><img src="/images/user/products/prototype_product_with_options.jpg" alt="Prototype Option Types"></p>
+<p><img src="/solidus-guides/assets/img/users/products/prototype_product_with_options.jpg" alt="Prototype Option Types"></p>
 
-<p>Proceed with <a href="creating-product">creating the product</a> as you would normally, adding any missing fields not supplied by the prototype.</p>
+<p>Proceed with <a href="../creating-product">creating the product</a> as you would normally, adding any missing fields not supplied by the prototype.</p>
 
 <p>Be sure to update each of the Variants with corresponding images, SKUs, and - if applicable - correct pricing.</p>
 
@@ -380,6 +374,15 @@
     </li>
   
     <li class="">
+      <a href="/solidus-guides/users/stock/"
+        title="Stock">Stock</a>
+      
+      
+
+      
+    </li>
+  
+    <li class="">
       <a href="/solidus-guides/users/promotions/"
         title="Promotions">Promotions</a>
       
@@ -405,8 +408,8 @@
 
 <button class="expand-subnav"
         aria-expanded="false"
-        aria-controls="nav-collapsible-7">+</button>
-<ul class="nav-children" id="nav-collapsible-7"
+        aria-controls="nav-collapsible-8">+</button>
+<ul class="nav-children" id="nav-collapsible-8"
     aria-hidden="true">
   
   

@@ -7,12 +7,6 @@
   <title>Promotions - Solidus Guides</title>
   <meta name="viewport" content="width=device-width">
   <link rel="shortcut icon" type="image/ico" href="/solidus-guides/assets/favicons/favicon.ico" />
-  <link rel="icon" type="image/png" href="/solidus-guides/assets/favicons/favicon.png" />
-  <link rel="apple-touch-icon-precomposed" href="/solidus-guides/assets/favicons/18f-center-57.png" />
-  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/solidus-guides/assets/favicons/18f-center-72.png" />
-  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/solidus-guides/assets/favicons/18f-center-114.png" />
-  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/solidus-guides/assets/favicons/18f-center-144.png"/>
-  <link rel="icon" type="image/png" sizes="192x192" href="/solidus-guides/assets/favicons/18f-center-192.png" />
   <link href='https://fonts.googleapis.com/css?family=Raleway:400,700%7COpen+Sans:400,400italic,600' rel='stylesheet' type='text/css' />
   <link rel="stylesheet" href="/solidus-guides/assets/css/styles.css" type='text/css' />
   <!--[if lt IE 9]>
@@ -57,45 +51,71 @@
 
         <section id="main" class="main-content" role="main">
           <h2>Promotions</h2>
-          <h2>Introduction</h2>
+          <h2 id="introduction">Introduction</h2>
 
 <p>The Solidus cart&#39;s promotions functionality allows you to offer coupons and discount to your site&#39;s users, based on the conditions you choose. This guide will explain to you all of the options at hand.</p>
 
 <p>To reach the Promotions pane, go to your Admin Interface and click the &quot;Promotions&quot; tab.</p>
 
-<h2>Creating a New Promotion</h2>
+<h2 id="creating-a-new-promotion">Creating a New Promotion</h2>
 
 <p>To create a new promotion, click the &quot;New Promotion&quot; button.</p>
 
-<p><img src="/images/user/promotions/new_promotion.jpg" alt="New Promotion"></p>
+<p><img src="/solidus-guides/assets/img/users/promotions/new_promotion.jpg" alt="New Promotion"></p>
 
 <p>The page that renders allows you to set several standard options that apply to all promotions. Each is explained below.</p>
 
-<p>Option | Description
-|---|---|
-Name | The name you assign for the promotion.
-Event Name | This is what must happen before the system will check to see if the promotion will apply to the order. Options are: <strong>Add to cart</strong> (any time an item is added to the cart), <strong>Order contents changed</strong> (an item is added to or removed from an order, or a quantity for an item in the order changes), <strong>User signup</strong> (a store visitor creates an account on the site), <strong>Coupon code added</strong> (a store visitor inputs a coupon code at checkout. The code has to match what you input for the code value if you select this option), or <strong>Visit static content page</strong> (a store visitor visits a path that you declare. This is often used to ensure that a customer has reviewed your store&#39;s policies or has been exposed to some other content that is important to your business model.)
-Advertise | Checking this box will make the promotion visible to site visitors as they shop your store.
-Description | A more thorough explanation of the promotion. The customer will be able to see this description at checkout.
-Usage Limit | The maximum total number of times the promotion can be used in your store across all users. If you don&#39;t input a value for this setting, the promotion can be used an unlimited number of times. Beneath this input field is a &quot;Current Usage&quot; counter, which is useful later when you&#39;re editing a promotion and need to know how many redemptions the promotion has had.
-Starts At | The date the promotion becomes valid.
-Expires At | The date after which the promotion is invalid.</p>
+<table><thead>
+<tr>
+<th>Option</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>Name</td>
+<td>The name you assign for the promotion.</td>
+</tr>
+<tr>
+<td>Event Name</td>
+<td>This is what must happen before the system will check to see if the promotion will apply to the order. Options are: <strong>Add to cart</strong> (any time an item is added to the cart), <strong>Order contents changed</strong> (an item is added to or removed from an order, or a quantity for an item in the order changes), <strong>User signup</strong> (a store visitor creates an account on the site), <strong>Coupon code added</strong> (a store visitor inputs a coupon code at checkout. The code has to match what you input for the code value if you select this option), or <strong>Visit static content page</strong> (a store visitor visits a path that you declare. This is often used to ensure that a customer has reviewed your store&#39;s policies or has been exposed to some other content that is important to your business model.)</td>
+</tr>
+<tr>
+<td>Advertise</td>
+<td>Checking this box will make the promotion visible to site visitors as they shop your store.</td>
+</tr>
+<tr>
+<td>Description</td>
+<td>A more thorough explanation of the promotion. The customer will be able to see this description at checkout.</td>
+</tr>
+<tr>
+<td>Usage Limit</td>
+<td>The maximum total number of times the promotion can be used in your store across all users. If you don&#39;t input a value for this setting, the promotion can be used an unlimited number of times. Beneath this input field is a &quot;Current Usage&quot; counter, which is useful later when you&#39;re editing a promotion and need to know how many redemptions the promotion has had.</td>
+</tr>
+<tr>
+<td>Starts At</td>
+<td>The date the promotion becomes valid.</td>
+</tr>
+<tr>
+<td>Expires At</td>
+<td>The date after which the promotion is invalid.</td>
+</tr>
+</tbody></table>
 
 <p>When you enter values for these fields and click &quot;Create&quot;, a new screen is rendered, giving you access to even more options for fine-tuning your promotion.</p>
 
-<h3>Rules</h3>
+<h3 id="rules">Rules</h3>
 
 <p>Rules represent the factors that must be met for a promotion to be applicable to an order. You can set one or more rules for a single promotion. When you set multiple rules, you have the option of either requiring that all of the rules must be met for the promotion to apply, or allowing a promotion to apply to an order if even one of the rules is met.</p>
 
 <p>There are five types of rules. You can only add one rule of each type to a single promotion. Each is explained in detail below.</p>
 
-<p><img src="/images/user/promotions/rules_options.jpg" alt="Rules Options"></p>
+<p><img src="/solidus-guides/assets/img/users/promotions/rules_options.jpg" alt="Rules Options"></p>
 
-<h4>Item Total</h4>
+<h4 id="item-total">Item Total</h4>
 
 <p>When you select &quot;Item total&quot; from the &quot;Add Rule of Type&quot; drop-down menu and click &quot;Add&quot;, you are declaring an Item Total rule.</p>
 
-<p><img src="/images/user/promotions/item_total_rule.jpg" alt="Item Total Rule"></p>
+<p><img src="/solidus-guides/assets/img/users/promotions/item_total_rule.jpg" alt="Item Total Rule"></p>
 
 <p>You can then set the parameters for this type of rule. Specifically, you can establish whether an order&#39;s items must be <strong>greater than</strong> or <strong>equal to or greater than</strong> the amount you set. Click &quot;Update&quot;.</p>
 
@@ -103,65 +123,85 @@ Expires At | The date after which the promotion is invalid.</p>
 
 <p>To remove a rule from a promotion, click the trash can icon next to it.</p>
 
-<p><img src="/images/user/promotions/delete_rule_icon.jpg" alt="Delete Rule Icon"></p>
+<p><img src="/solidus-guides/assets/img/users/promotions/delete_rule_icon.jpg" alt="Delete Rule Icon"></p>
 
 <hr>
 
-<h4>Products</h4>
+<h4 id="products">Products</h4>
 
 <p>Using a rule of this type means the order must contain <strong>at least one</strong> or <strong>all</strong> of the products you declare.</p>
 
-<p><img src="/images/user/promotions/products_rule.jpg" alt="Products Rule"></p>
+<p><img src="/solidus-guides/assets/img/users/promotions/products_rule.jpg" alt="Products Rule"></p>
 
 <p>To create this kind of rule, just select &quot;Product(s)&quot; from the &quot;Add Rule of Type&quot; drop-down menu and click &quot;Add&quot;. Start typing in the name of the product(s) you want to apply discounts to into the &quot;Choose Products&quot; box. Click on the correct variants. Choose either &quot;at least one&quot; or &quot;all&quot; from the selection box, and click &quot;Update&quot;.</p>
 
-<h4>User</h4>
+<h4 id="user">User</h4>
 
 <p>You can use the User rule type to restrict a promotion to only those customers you declare. To create this type of rule, select &quot;User&quot; from the &quot;Add Rule of Type&quot; drop-down menu and click &quot;Add&quot;. Start typing in the name or email address of the user(s) you want to offer this promotion to. As the correct users are offered, click them to add them to the list. Click &quot;Update&quot;.</p>
 
-<p><img src="/images/user/promotions/user_rule.jpg" alt="User Rule"></p>
+<p><img src="/solidus-guides/assets/img/users/promotions/user_rule.jpg" alt="User Rule"></p>
 
-<h4>First Order</h4>
+<h4 id="first-order">First Order</h4>
 
 <p>Select &quot;First order&quot; from the &quot;Add Rule of Type&quot; drop-down menu and click &quot;Add&quot; then &quot;Update&quot; to add a rule of this type to your promotion. This rule will restrict the promotion to only those customers ordering from you for the first time.</p>
 
-<p><img src="/images/user/promotions/first_order_rule.jpg" alt="First Order Rule"></p>
+<p><img src="/solidus-guides/assets/img/users/promotions/first_order_rule.jpg" alt="First Order Rule"></p>
 
-<h4>User Logged In</h4>
+<h4 id="user-logged-in">User Logged In</h4>
 
 <p>Add a rule of this type to restrict the promotion only to logged-in users. Select &quot;User Logged In&quot; from the &quot;Add Rule of Type&quot; drop-down list, click &quot;Add&quot;, then click &quot;Update&quot;.</p>
 
-<p><img src="/images/user/promotions/logged_in_rule.jpg" alt="Logged In Rule"></p>
+<p><img src="/solidus-guides/assets/img/users/promotions/logged_in_rule.jpg" alt="Logged In Rule"></p>
 
-<h3>Actions</h3>
+<h3 id="actions">Actions</h3>
 
 <p>Whereas <a href="#rules">Rules</a> establish whether a promotion applies or not, Actions determine what happens when a promotion does apply to an order. There are two types of actions: <a href="#create-adjustments">create adjustments</a> and <a href="#create-line-items">create line items</a>.</p>
 
-<h4>Create Adjustments</h4>
+<h4 id="create-adjustments">Create Adjustments</h4>
 
-<p>When you select &quot;Create adjustment&quot; from the &quot;Add Action of Type&quot; drop-down menu and click &quot;Add&quot;, the system presents you with several calculator options. These are the same as the options you read about in the <a href="calculators">calculators guide</a>, except that instead of a <a href="calculators#price-sack">price sack calculator</a>, there are two additional calculators: percent per item and free shipping.</p>
+<p>When you select &quot;Create adjustment&quot; from the &quot;Add Action of Type&quot; drop-down menu and click &quot;Add&quot;, the system presents you with several calculator options. These are the same as the options you read about in the <a href="../shipments/calculators">calculators guide</a>, except that instead of a <a href="calculators#price-sack">price sack calculator</a>, there are two additional calculators: percent per item and free shipping.</p>
 
-<p><img src="/images/user/promotions/create_adjustment.jpg" alt="Create Adjustments Action Calculators"></p>
+<p><img src="/solidus-guides/assets/img/users/promotions/create_adjustment.jpg" alt="Create Adjustments Action Calculators"></p>
 
 <p>By default, when you add a new &quot;Create adjustment&quot; calculator it sets it to a &quot;Flat percent&quot; calculator. You can change this by selecting the new calculator type from the &quot;Calculator&quot; drop-down menu, but you will need to click the &quot;Update&quot; button to get that calculator&#39;s specific additional required fields to display.</p>
 
 <p>Each calculator has its own set of required additional information fields.</p>
 
-<p>Calculator Type | Additional Data Required
-|---|---|
-Flat Percent | Percentage amount
-Flat Rate | Amount of discount, and currency
-Flexible Rate | The cost of the first item, the cost of each additional item, the maximum number of items included in the promotion, and the currency
-Percent Per Item | Percentage amount
-Free Shipping | No additional info required</p>
+<table><thead>
+<tr>
+<th>Calculator Type</th>
+<th>Additional Data Required</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>Flat Percent</td>
+<td>Percentage amount</td>
+</tr>
+<tr>
+<td>Flat Rate</td>
+<td>Amount of discount, and currency</td>
+</tr>
+<tr>
+<td>Flexible Rate</td>
+<td>The cost of the first item, the cost of each additional item, the maximum number of items included in the promotion, and the currency</td>
+</tr>
+<tr>
+<td>Percent Per Item</td>
+<td>Percentage amount</td>
+</tr>
+<tr>
+<td>Free Shipping</td>
+<td>No additional info required</td>
+</tr>
+</tbody></table>
 
 <p>Enter all required information for your calculator type, then click &quot;Update&quot;.</p>
 
-<h4>Create Line Items</h4>
+<h4 id="create-line-items">Create Line Items</h4>
 
 <p>This action type is a way of automatically adding items to an order when a promotion applies to an order. To add this action to your promotion, select &quot;Create line items&quot; from the &quot;Add Action of Type&quot; drop-down menu and click &quot;Add&quot;.</p>
 
-<p><img src="/images/user/promotions/create_line_item.jpg" alt="Create Line Item Action"></p>
+<p><img src="/solidus-guides/assets/img/users/promotions/create_line_item.jpg" alt="Create Line Item Action"></p>
 
 <p>Select the quantity and variant you want automatically added to the customer&#39;s order from the product drop-down menu. Click &quot;Update&quot;.</p>
 
@@ -169,17 +209,17 @@ Free Shipping | No additional info required</p>
 Product variants added through Line Item Action Promotions will be priced as usual. If your intention is to add a free product, you should do both a Line Item action to add the product, and an Adjustment action to discount the cost of that variant.
 !!!</p>
 
-<h2>Editing a Promotion</h2>
+<h2 id="editing-a-promotion">Editing a Promotion</h2>
 
 <p>To edit a promotion, first go to the Promotions list (from the Admin Interface, click &quot;Promotions&quot;). Click the &quot;Edit&quot; icon next to the promotion.</p>
 
-<p><img src="/images/user/promotions/edit_promotion_icon.jpg" alt="Edit Promotion Icon"></p>
+<p><img src="/solidus-guides/assets/img/users/promotions/edit_promotion_icon.jpg" alt="Edit Promotion Icon"></p>
 
-<h2>Removing a Promotion</h2>
+<h2 id="removing-a-promotion">Removing a Promotion</h2>
 
 <p>To remove a promotion, click the &quot;Delete&quot; icon next to the promotion in the Promotions list.</p>
 
-<p><img src="/images/user/promotions/delete_promotion_icon.jpg" alt="Delete Promotion Icon"></p>
+<p><img src="/solidus-guides/assets/img/users/promotions/delete_promotion_icon.jpg" alt="Delete Promotion Icon"></p>
 
         </section>
 
@@ -455,6 +495,15 @@ Product variants added through Line Item Action Promotions will be priced as usu
       
     </li>
   
+    <li class="">
+      <a href="/solidus-guides/users/stock/"
+        title="Stock">Stock</a>
+      
+      
+
+      
+    </li>
+  
     <li class="sidebar-nav-active">
       <a href="/solidus-guides/users/promotions/"
         title="Current Page">Promotions</a>
@@ -481,8 +530,8 @@ Product variants added through Line Item Action Promotions will be priced as usu
 
 <button class="expand-subnav"
         aria-expanded="false"
-        aria-controls="nav-collapsible-7">+</button>
-<ul class="nav-children" id="nav-collapsible-7"
+        aria-controls="nav-collapsible-8">+</button>
+<ul class="nav-children" id="nav-collapsible-8"
     aria-hidden="true">
   
   

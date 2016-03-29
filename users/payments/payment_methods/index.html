@@ -7,12 +7,6 @@
   <title>Payment Methods - Solidus Guides</title>
   <meta name="viewport" content="width=device-width">
   <link rel="shortcut icon" type="image/ico" href="/solidus-guides/assets/favicons/favicon.ico" />
-  <link rel="icon" type="image/png" href="/solidus-guides/assets/favicons/favicon.png" />
-  <link rel="apple-touch-icon-precomposed" href="/solidus-guides/assets/favicons/18f-center-57.png" />
-  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/solidus-guides/assets/favicons/18f-center-72.png" />
-  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/solidus-guides/assets/favicons/18f-center-114.png" />
-  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/solidus-guides/assets/favicons/18f-center-144.png"/>
-  <link rel="icon" type="image/png" sizes="192x192" href="/solidus-guides/assets/favicons/18f-center-192.png" />
   <link href='https://fonts.googleapis.com/css?family=Raleway:400,700%7COpen+Sans:400,400italic,600' rel='stylesheet' type='text/css' />
   <link rel="stylesheet" href="/solidus-guides/assets/css/styles.css" type='text/css' />
   <!--[if lt IE 9]>
@@ -81,7 +75,7 @@
 
 <h2>Add a Payment Method</h2>
 
-<p>Solidus enables you to utilize the payment method of choice for your e-commerce store. We have two <a href="http://Soliduscommerce.com/products/payment_processing">preferred payment gateway partners</a> and a long <a href="https://github.com/Shopify/active_merchant#supported-direct-payment-gateways">list</a> of payment gateways that are supported by default in Solidus. We also enable you to add a custom payment gateway, as well as offer offline payment options such as checks and purchase orders.</p>
+<p>Solidus enables you to utilize the payment method of choice for your e-commerce store. We have two preferred payment gateway partners Braintree and Stripe and a long <a href="https://github.com/Shopify/active_merchant#supported-direct-payment-gateways">list</a> of payment gateways that are supported by default in Solidus. We also enable you to add a custom payment gateway, as well as offer offline payment options such as checks and purchase orders.</p>
 
 <h3>Add a Supported Gateway</h3>
 
@@ -89,13 +83,13 @@
 
 <h4>Select Provider</h4>
 
-<p>To configure one of the supported payment gateways, you must first install the <a href="https://github.com/Solidus/Solidus_gateway">Solidus_Gateway</a> extension on your store. More than likely, you will want to ask someone from your technical team to do this. Once this extension has been installed, you can configure one of the supported gateways in the Admin Interface by clicking the &quot;Configuration&quot; tab and then clicking the &quot;New Payment Method&quot; button.</p>
+<p>To configure one of the supported payment gateways, you must first install the <a href="https://github.com/solidusio/solidus_gateway">Solidus_Gateway</a> extension on your store. More than likely, you will want to ask someone from your technical team to do this. Once this extension has been installed, you can configure one of the supported gateways in the Admin Interface by clicking the &quot;Settings&quot; tab and then clicking the &quot;Payment Methods&quot; link on the right.</p>
 
-<p><img src="/images/user/payments/new_payment_method.jpg" alt="New Payment Method Form"></p>
+<p><img src="/solidus-guides/assets/img/users/payments/new_payment_method.png" alt="New Payment Method Form"></p>
 
-<p>If you installed the <a href="https://github.com/Solidus/Solidus_gateway">Solidus_Gateway</a> extension, you will see a long list of gateways in the &quot;Provider&quot; drop down menu. Select the one that you would like to add.</p>
+<p>If you installed the <a href="https://github.com/solidusio/solidus_gateway">Solidus_Gateway</a> extension, you will see a long list of gateways in the &quot;Provider&quot; drop down menu. Select the one that you would like to add.</p>
 
-<p><img src="/images/user/payments/add_payment_provider.jpg" alt="Select Payment Gateway Provider"></p>
+<p><img src="/solidus-guides/assets/img/users/payments/add_payment_provider.png" alt="Select Payment Gateway Provider"></p>
 
 <h4>Display</h4>
 
@@ -113,7 +107,7 @@
 
 <p>Give the payment method a name. The value you enter will appear on the customer-facing area of your store, on the Payment page as seen below:</p>
 
-<p><img src="/images/user/payments/payment_method_name.jpg" alt="Payment Method Name"></p>
+<p><img src="/solidus-guides/assets/img/users/payments/payment_method_name.png" alt="Payment Method Name"></p>
 
 <h4>Description</h4>
 
@@ -129,13 +123,13 @@
 
 <p>To edit the configuration settings for an existing payment method, go to the Admin Interface, click the &quot;Configuration&quot; tab, and then click the &quot;Payment Methods&quot; link. Find the payment method that you would like to edit on the list that appears. Click the &quot;Edit&quot; icon next to the payment method to edit its settings.</p>
 
-<p><img src="/images/user/payments/edit_payment_method.jpg" alt="Edit Payment Method"></p>
+<p><img src="/solidus-guides/assets/img/users/payments/edit_payment_method.png" alt="Edit Payment Method"></p>
 
 <p>Make the desired changes to the payment method settings and then click &quot;Update&quot; to save them.</p>
 
 <h2>Processing Payments</h2>
 
-<p>Processing orders and the payments associated with them are covered in detail in the <a href="processing_orders">Processing Orders guide</a>.</p>
+<p>Processing orders and the payments associated with them are covered in detail in the <a href="/solidus-guides/users/orders/processing_orders">Processing Orders guide</a>.</p>
 
         </section>
 

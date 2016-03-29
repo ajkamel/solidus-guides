@@ -7,12 +7,6 @@
   <title>Taxes - Solidus Guides</title>
   <meta name="viewport" content="width=device-width">
   <link rel="shortcut icon" type="image/ico" href="/solidus-guides/assets/favicons/favicon.ico" />
-  <link rel="icon" type="image/png" href="/solidus-guides/assets/favicons/favicon.png" />
-  <link rel="apple-touch-icon-precomposed" href="/solidus-guides/assets/favicons/18f-center-57.png" />
-  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/solidus-guides/assets/favicons/18f-center-72.png" />
-  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/solidus-guides/assets/favicons/18f-center-114.png" />
-  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/solidus-guides/assets/favicons/18f-center-144.png"/>
-  <link rel="icon" type="image/png" sizes="192x192" href="/solidus-guides/assets/favicons/18f-center-192.png" />
   <link href='https://fonts.googleapis.com/css?family=Raleway:400,700%7COpen+Sans:400,400italic,600' rel='stylesheet' type='text/css' />
   <link rel="stylesheet" href="/solidus-guides/assets/css/styles.css" type='text/css' />
   <!--[if lt IE 9]>
@@ -57,7 +51,7 @@
 
         <section id="main" class="main-content" role="main">
           <h2>Taxes</h2>
-          <h2>Introduction</h2>
+          <h2 id="introduction">Introduction</h2>
 
 <p>Taxation, as you undoubtedly already know, is a very complicated topic. It can be challenging to manage taxation settings in an e-commerce store - particularly when you sell a variety of types of goods - but the Solidus shopping cart system gives you simple, yet effective tools to manage it with ease.</p>
 
@@ -69,45 +63,45 @@
 <li><a href="#tax-rates">Tax Rates</a></li>
 </ul>
 
-<h2>Tax Categories</h2>
+<h2 id="tax-categories">Tax Categories</h2>
 
 <p>Tax Categories is Solidus&#39;s way of grouping products into those which are taxed in the same way. This is behind-the-scenes functionality; the customer never sees the category a product is in. They only see the amount they will be charged based on their order&#39;s delivery address.</p>
 
 <p>To access your store&#39;s existing Tax Categories, go to your Admin Interface, click &quot;Configuration&quot; then &quot;Tax Categories&quot;.</p>
 
-<p><img src="/images/user/config/tax_categories.jpg" alt="Tax Categories"></p>
+<p><img src="/solidus-guides/assets/img/users/config/tax_categories.jpg" alt="Tax Categories"></p>
 
 <p>You can edit existing Tax Categories by clicking the &quot;Edit&quot; icon next to each in the list.</p>
 
-<p><img src="/images/user/config/edit_tax_category_link.jpg" alt="Edit Tax Category Link"></p>
+<p><img src="/solidus-guides/assets/img/users/config/edit_tax_category_link.jpg" alt="Edit Tax Category Link"></p>
 
 <p>You can also remove a Tax Category by clicking the &quot;Delete&quot; icon next to the category, then clicking &quot;OK&quot; to confirm.</p>
 
-<p><img src="/images/user/config/delete_tax_category_link.jpg" alt="Delete Tax Category Link"></p>
+<p><img src="/solidus-guides/assets/img/users/config/delete_tax_category_link.jpg" alt="Delete Tax Category Link"></p>
 
 <p>To create a new Tax Category, click the &quot;New Tax Category&quot; button.</p>
 
-<p><img src="/images/user/config/new_tax_category_form.jpg" alt="New Tax Category Form"></p>
+<p><img src="/solidus-guides/assets/img/users/config/new_tax_category_form.jpg" alt="New Tax Category Form"></p>
 
 <p>You supply a name, an optional description, and whether or not this is the default tax category for this store.</p>
 
 <p>Each product in your store will need a tax category assigned to it to accurately calculate the tax due on an order. Any product that does not have a tax category assigned will be put in the default tax category. If there is no default tax category set, the item will be treated as non-taxable.</p>
 
-<h2>Zones</h2>
+<h2 id="zones">Zones</h2>
 
 <p>In addition to a product&#39;s tax category, the zone an order is being shipped to will play a role in determining the tax amount. You can read more about how zones work in the <a href="zones">Zones guide</a>.</p>
 
-<h2>Tax Rates</h2>
+<h2 id="tax-rates">Tax Rates</h2>
 
 <p>Tax rates are how it all comes together. A product with a given <a href="#tax-categories">Tax Category</a>, being shipped to a particular <a href="#zones">Zone</a>, will accrue tax charges based on the relevant tax rate that you create.</p>
 
 <p>To add a new Tax Rate, go to your Admin Interface. Click &quot;Configuration&quot; then &quot;Tax Rates&quot;.</p>
 
-<p><img src="/images/user/config/tax_rates.jpg" alt="Tax Rates"></p>
+<p><img src="/solidus-guides/assets/img/users/config/tax_rates.jpg" alt="Tax Rates"></p>
 
 <p>Here, you can see all of your existing tax rates and how they are configured. To create a new tax rate, click the &quot;New Tax Rate&quot; button.</p>
 
-<p><img src="/images/user/config/new_tax_rate.jpg" alt="New Tax Rate"></p>
+<p><img src="/solidus-guides/assets/img/users/config/new_tax_rate.jpg" alt="New Tax Rate"></p>
 
 <ul>
 <li><strong>Name</strong> - Give your new tax rate a meaningful name (like &quot;Taxable US Goods&quot;, for example)</li>
@@ -119,11 +113,11 @@
 <li><strong>Calculator</strong> - By default, Solidus uses the Default Tax calculator (a simple tax rate times item price adjusted for any promotions) calculation to determine tax. If you need something more specific or customized than this, it can be done - you&#39;ll just need to work with your development team to make it happen.</li>
 </ul>
 
-<h2>Tax Settings</h2>
+<h2 id="tax-settings">Tax Settings</h2>
 
 <p>Finally, European stores will benefit from the Tax Settings page.</p>
 
-<p><img src="/images/user/config/tax_settings.jpg" alt="Tax Settings"></p>
+<p><img src="/solidus-guides/assets/img/users/config/tax_settings.jpg" alt="Tax Settings"></p>
 
 <p>When this option is checked, your Solidus site will take its default <a href="#tax_categories">tax category</a>, find the corresponding <a href="#tax-rate">tax rate</a>, and multiply it times the shipping rate for each available <a href="shipping_methods">shipping method</a> offered to a customer during checkout.</p>
 
@@ -402,6 +396,15 @@
     </li>
   
     <li class="">
+      <a href="/solidus-guides/users/stock/"
+        title="Stock">Stock</a>
+      
+      
+
+      
+    </li>
+  
+    <li class="">
       <a href="/solidus-guides/users/promotions/"
         title="Promotions">Promotions</a>
       
@@ -427,8 +430,8 @@
 
 <button class="expand-subnav"
         aria-expanded="true"
-        aria-controls="nav-collapsible-7">+</button>
-<ul class="nav-children" id="nav-collapsible-7"
+        aria-controls="nav-collapsible-8">+</button>
+<ul class="nav-children" id="nav-collapsible-8"
     aria-hidden="false">
   
   
