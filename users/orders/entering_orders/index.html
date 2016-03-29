@@ -51,7 +51,7 @@
 
         <section id="main" class="main-content" role="main">
           <h2>Manual Order Entry</h2>
-          <h2>Introduction</h2>
+          <h2 id="introduction">Introduction</h2>
 
 <p>An order can be created one of two ways:</p>
 
@@ -62,7 +62,7 @@
 
 <p>This guide covers how to create a manual order from the Admin Interface.</p>
 
-<h2>Add Products</h2>
+<h2 id="add-products">Add Products</h2>
 
 <p>To create a new manual order, go into the Admin Interface, click the &quot;Orders&quot; tab, and click the &quot;New Order&quot; button.</p>
 
@@ -80,7 +80,7 @@
 
 <p>Follow the same steps to add more products to the order.</p>
 
-<h2>Customer Details</h2>
+<h2 id="customer-details">Customer Details</h2>
 
 <p>Click the &quot;Customer&quot; link. You can either select a name from the &quot;Customer Search&quot; field if the customer has ordered from you before, or you can enter the customer&#39;s email address in the &quot;Email&quot; field of the &quot;Account&quot; section. The setting for &quot;Guest Checkout&quot; will automatically change accordingly.</p>
 
@@ -90,7 +90,7 @@
 
 <p>Click the &quot;Update&quot; button.</p>
 
-<h2>Shipments</h2>
+<h2 id="shipments">Shipments</h2>
 
 <p>After you input the customer information, you will want to choose a shipping method. To do so, click the &quot;Shipments&quot; link.</p>
 
@@ -106,17 +106,17 @@
 
 <p>Click the &quot;Save&quot; icon to confirm your change. Your Solidus site will re-calculate the shipping, any relevant adjustments, and total for your order.</p>
 
-<h2>Adjustments</h2>
+<h2 id="adjustments">Adjustments</h2>
 
 <p>The Solidus shopping cart will automatically add the cost of the Shipping Method to your order as an adjustment - you can change or remove this.  You can also add a coupon code here as well.</p>
 
-<h3>Editing Adjustments</h3>
+<h3 id="editing-adjustments">Editing Adjustments</h3>
 
 <p>To edit an existing order adjustment, just click the &quot;Adjustments&quot; link in the order summary, then click the &quot;Edit&quot; icon next to the adjustment in the Adjustments list. Enter in the amount of the adjustment and reason and click continue.  When finished click finalize adjustments.</p>
 
 <p><img src="/solidus-guides/assets/img/users/orders/edit_adjustment_icon.png" alt="Edit Adjustment Icon"></p>
 
-<h3>Deleting Adjustments</h3>
+<h3 id="deleting-adjustments">Deleting Adjustments</h3>
 
 <p>To remove an adjustment, click the &quot;Delete&quot; icon next to it in the Adjustments list.</p>
 
@@ -124,7 +124,7 @@
 
 <p>Confirm the deletion by clicking &quot;OK&quot;.</p>
 
-<h3>Opening and Closing Adjustments</h3>
+<h3 id="opening-and-closing-adjustments">Opening and Closing Adjustments</h3>
 
 <p>Some types of adjustments - tax and shipping, for example - may re-calculate as the order changes, new products are added to it, etc. If you want to be sure that the amount of an adjustment will remain the same, you can lock it in place. This is also known as closing the adjustment.</p>
 
@@ -140,7 +140,7 @@
 
 <p><img src="/solidus-guides/assets/img/users/orders/mass_open_close_adjustments.png" alt="Mass Open and Close Adjustments"></p>
 
-<h3>Adding Adjustments</h3>
+<h3 id="adding-adjustments">Adding Adjustments</h3>
 
 <p>You can also add further adjustments - positive or negative - to the order to account for things like handling charges, store credits, etc. To add a new adjustment, click the &quot;New Adjustment&quot; button at the top right corner.</p>
 
@@ -152,7 +152,7 @@
 
 <p>Once you have finished all of the changes you want to the order&#39;s Adjustments, click &quot;Continue&quot;.</p>
 
-<h2>Payments</h2>
+<h2 id="payments">Payments</h2>
 
 <p>If you are manually entering this order, it is presumed that you have received payment either in person, on the phone, or through some other non-website means. You can manually enter payment using any of your site&#39;s configured <a href="/solidus-guides/users/payments/payment_methods">payment methods</a>.</p>
 
@@ -373,7 +373,7 @@
   
     <li class="">
       <a href="/solidus-guides/users/products/product_prototypes/"
-        title="product_prototypes">product_prototypes</a>
+        title="Product Prototypes">Product Prototypes</a>
       
       
 
@@ -447,6 +447,15 @@
     </li>
   
     <li class="">
+      <a href="/solidus-guides/users/stock/"
+        title="Stock">Stock</a>
+      
+      
+
+      
+    </li>
+  
+    <li class="">
       <a href="/solidus-guides/users/promotions/"
         title="Promotions">Promotions</a>
       
@@ -472,8 +481,8 @@
 
 <button class="expand-subnav"
         aria-expanded="false"
-        aria-controls="nav-collapsible-7">+</button>
-<ul class="nav-children" id="nav-collapsible-7"
+        aria-controls="nav-collapsible-8">+</button>
+<ul class="nav-children" id="nav-collapsible-8"
     aria-hidden="true">
   
   
@@ -555,11 +564,11 @@
 
       <footer role="contentinfo">
   <div class="wrap">
-    <p>This project is maintained by <a href="https://solidus.io">Ash Kamel</a>. The source is available at <a href="https://github.com/ajkamel/solidus-guides">https://github.com/ajkamel/solidus-guides</a>.</p>
+    <p>This project is maintained by <a href="https://solidus.io">Ash Kamel</a>. The source is available at <a href="https://github.com/solidusio/solidus_guides">https://github.com/solidusio/solidus_guides</a>.</p>
 
     <p>Hosted on <a href="https://github.com/ajkamel/">Github</a>.
     The <a href="https://github.com/ajkamel/solidus-guides/">Solidus Guides</a> is based on <a href="https://github.com/18F/guides-template/"> from <a href="https://github.com/cfpb/docter/">DOCter</a> from <a href="http://cfpb.github.io/">CFPB</a>.</p>
-    <p><a href="https://github.com/ajkamel/solidus-guides/edit/18f-pages/_pages/users/orders/entering_orders.md">Edit this page</a> or <a href="https://github.com/ajkamel/solidus-guides/issues">file an issue</a> on GitHub.</p>
+    <p><a href="https://github.com/solidusio/solidus_guides/edit/18f-pages/_pages/users/orders/entering_orders.md">Edit this page</a> or <a href="https://github.com/solidusio/solidus_guides/issues">file an issue</a> on GitHub.</p>
   </div><!--/.wrap -->
 </footer>
 

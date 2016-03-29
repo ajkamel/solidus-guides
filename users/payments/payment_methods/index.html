@@ -51,11 +51,11 @@
 
         <section id="main" class="main-content" role="main">
           <h2>Payment Methods</h2>
-          <h2>Introduction</h2>
+          <h2 id="introduction">Introduction</h2>
 
 <p>Payment methods represent the different payment options available to customers during the checkout process on an e-commerce store. Solidus supports many types of payment methods, including both online and offline options. This guide describes how to add payment methods to your Solidus store.</p>
 
-<h2>Terminology</h2>
+<h2 id="terminology">Terminology</h2>
 
 <p>Let&#39;s begin by explaining the difference between a Payment Gateway and a Merchant Account.</p>
 
@@ -63,7 +63,7 @@
 
 <p><strong>Merchant Account</strong> - A merchant account is a type of bank account that allows you to accept credit card payments online. If you have a retail business and already accept credit card payments, then more than likely you have a merchant account. When you start to sell products online, you may need to call your bank and ask that they set you up with an <em>Internet</em> merchant account. An Internet merchant account allows you to accept payments online without having the customer&#39;s credit card physically in front of you.</p>
 
-<h2>Evaluating Payment Gateways</h2>
+<h2 id="evaluating-payment-gateways">Evaluating Payment Gateways</h2>
 
 <p>When researching payment gateway options, you may find that they offer an all-in-one solution that includes both the gateway and the merchant account. This is just something to be aware of and to evaluate if it makes sense for your store. Payment gateways also charge a fee for their services. Here are a few of the fees you might come across when evaluating providers:</p>
 
@@ -73,15 +73,15 @@
 
 <p><strong>Transaction Fees</strong> - A charge for each purchase made on your e-commerce store. The pricing structure for these fees differ per gateway. A popular structure is to charge a percentage of the purchase price plus a flat fee. For example, 2.9% of the purchase price plus $0.30 per transaction.</p>
 
-<h2>Add a Payment Method</h2>
+<h2 id="add-a-payment-method">Add a Payment Method</h2>
 
 <p>Solidus enables you to utilize the payment method of choice for your e-commerce store. We have two preferred payment gateway partners Braintree and Stripe and a long <a href="https://github.com/Shopify/active_merchant#supported-direct-payment-gateways">list</a> of payment gateways that are supported by default in Solidus. We also enable you to add a custom payment gateway, as well as offer offline payment options such as checks and purchase orders.</p>
 
-<h3>Add a Supported Gateway</h3>
+<h3 id="add-a-supported-gateway">Add a Supported Gateway</h3>
 
 <p>Read through the following explanatory text to add one of the supported payment gateways as a payment method on your store.</p>
 
-<h4>Select Provider</h4>
+<h4 id="select-provider">Select Provider</h4>
 
 <p>To configure one of the supported payment gateways, you must first install the <a href="https://github.com/solidusio/solidus_gateway">Solidus_Gateway</a> extension on your store. More than likely, you will want to ask someone from your technical team to do this. Once this extension has been installed, you can configure one of the supported gateways in the Admin Interface by clicking the &quot;Settings&quot; tab and then clicking the &quot;Payment Methods&quot; link on the right.</p>
 
@@ -91,7 +91,7 @@
 
 <p><img src="/solidus-guides/assets/img/users/payments/add_payment_provider.png" alt="Select Payment Gateway Provider"></p>
 
-<h4>Display</h4>
+<h4 id="display">Display</h4>
 
 <p>Select whether you want the payment method to appear on the Frontend or the Backend of your store, or both.</p>
 
@@ -99,27 +99,27 @@
 
 <p>The Backend is the Admin Interface for your store. Site administrators typically select this option when they want to make a payment option available to their internal staff but not to their end customers. For example, you might want to offer purchase orders as a payment option to customers on a one-off basis, but only if they contact one of your customer service representatives via email or telephone.</p>
 
-<h4>Active</h4>
+<h4 id="active">Active</h4>
 
 <p>Select &quot;Yes&quot; if you want the payment method to be active on your store. Select &quot;No&quot; if you want to create the payment method, but not present it on your store until a later point.</p>
 
-<h4>Name</h4>
+<h4 id="name">Name</h4>
 
 <p>Give the payment method a name. The value you enter will appear on the customer-facing area of your store, on the Payment page as seen below:</p>
 
 <p><img src="/solidus-guides/assets/img/users/payments/payment_method_name.png" alt="Payment Method Name"></p>
 
-<h4>Description</h4>
+<h4 id="description">Description</h4>
 
 <p>Add a description for the payment method. This field is optional and is only displayed to internal users and not to customers.</p>
 
 <p>Click &quot;Update&quot; once you&#39;ve input the desired settings for your new payment method.</p>
 
-<h3>Add a Non-Supported Gateway</h3>
+<h3 id="add-a-non-supported-gateway">Add a Non-Supported Gateway</h3>
 
 <p>It is possible to add a new payment gateway that is not included on the supported by default gateway <a href="https://github.com/Shopify/active_merchant#supported-direct-payment-gateways">list</a>, but doing so is outside the scope of this tutorial. Please consult with your development team if you need this functionality.</p>
 
-<h2>Edit a Payment Method</h2>
+<h2 id="edit-a-payment-method">Edit a Payment Method</h2>
 
 <p>To edit the configuration settings for an existing payment method, go to the Admin Interface, click the &quot;Configuration&quot; tab, and then click the &quot;Payment Methods&quot; link. Find the payment method that you would like to edit on the list that appears. Click the &quot;Edit&quot; icon next to the payment method to edit its settings.</p>
 
@@ -127,7 +127,7 @@
 
 <p>Make the desired changes to the payment method settings and then click &quot;Update&quot; to save them.</p>
 
-<h2>Processing Payments</h2>
+<h2 id="processing-payments">Processing Payments</h2>
 
 <p>Processing orders and the payments associated with them are covered in detail in the <a href="/solidus-guides/users/orders/processing_orders">Processing Orders guide</a>.</p>
 
@@ -332,7 +332,7 @@
   
     <li class="">
       <a href="/solidus-guides/users/products/product_prototypes/"
-        title="product_prototypes">product_prototypes</a>
+        title="Product Prototypes">Product Prototypes</a>
       
       
 
@@ -406,6 +406,15 @@
     </li>
   
     <li class="">
+      <a href="/solidus-guides/users/stock/"
+        title="Stock">Stock</a>
+      
+      
+
+      
+    </li>
+  
+    <li class="">
       <a href="/solidus-guides/users/promotions/"
         title="Promotions">Promotions</a>
       
@@ -431,8 +440,8 @@
 
 <button class="expand-subnav"
         aria-expanded="false"
-        aria-controls="nav-collapsible-7">+</button>
-<ul class="nav-children" id="nav-collapsible-7"
+        aria-controls="nav-collapsible-8">+</button>
+<ul class="nav-children" id="nav-collapsible-8"
     aria-hidden="true">
   
   
@@ -514,11 +523,11 @@
 
       <footer role="contentinfo">
   <div class="wrap">
-    <p>This project is maintained by <a href="https://solidus.io">Ash Kamel</a>. The source is available at <a href="https://github.com/ajkamel/solidus-guides">https://github.com/ajkamel/solidus-guides</a>.</p>
+    <p>This project is maintained by <a href="https://solidus.io">Ash Kamel</a>. The source is available at <a href="https://github.com/solidusio/solidus_guides">https://github.com/solidusio/solidus_guides</a>.</p>
 
     <p>Hosted on <a href="https://github.com/ajkamel/">Github</a>.
     The <a href="https://github.com/ajkamel/solidus-guides/">Solidus Guides</a> is based on <a href="https://github.com/18F/guides-template/"> from <a href="https://github.com/cfpb/docter/">DOCter</a> from <a href="http://cfpb.github.io/">CFPB</a>.</p>
-    <p><a href="https://github.com/ajkamel/solidus-guides/edit/18f-pages/_pages/users/payments/payment_methods.md">Edit this page</a> or <a href="https://github.com/ajkamel/solidus-guides/issues">file an issue</a> on GitHub.</p>
+    <p><a href="https://github.com/solidusio/solidus_guides/edit/18f-pages/_pages/users/payments/payment_methods.md">Edit this page</a> or <a href="https://github.com/solidusio/solidus_guides/issues">file an issue</a> on GitHub.</p>
   </div><!--/.wrap -->
 </footer>
 
